@@ -1,0 +1,1721 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
+<meta name="title" content="DHL | Suivi avec référence de l’expéditeur | Français"/>
+<meta name="keywords" content=""/>
+<meta name="language" content="Français"/>
+<meta name="publisher" content="DHL"/>
+<meta name="description" content="DHL allows you to track your express shipments using a personalized reference number. Adding this reference on your waybill allows DHL account holders to differentiate shipments on their monthly invoice."/>
+<!-- include webtrends tags -->
+<meta name="WT.cg_n" content="Canada" />
+<meta name="WT.cg_s" content="Express" />
+<meta name="DCSext.cg_sec3" content="Tracking" />
+<meta name="DCSext.language" content="French" />
+<meta name="WT.sp" content="Canada" />
+<meta name="WT.ti" content="Tracking | Track by Shipper's Reference | Canada | French" /><!-- include custom tags -->
+<title>DHL | Suivi avec référence de l’expéditeur | Français</title>
+<link rel="shortcut icon" href="../../../img/favicon.gif" type="image/gif"/>
+<link href="../../../loader/css.areaofinterestTemp.css" rel="stylesheet" type="text/css"/>
+<!--[if IE 6]>
+    <div id="emhelper" style="width:1em;height:1em;"></div>
+    <link href="/css/ie6_optimization.css" rel="stylesheet" type="text/css" />
+        <![endif]-->
+    <!--[if IE 7]>
+    <div id="emhelper" style="width:1em;height:1em;"></div>
+    <![endif]-->
+<style type="text/css">
+        <!--
+        #content_cross_reference {
+            width: 24em;
+        }
+
+        -->
+    </style>
+<link href="../../../css/facelift.css" rel="stylesheet" type="text/css"/>
+<!--[if IE 6]>
+<link href="/css/facelift_ie6.css" rel="stylesheet" type="text/css"/>
+<![endif]-->
+<!--[if IE 7]>
+<link href="/css/facelift_ie7.css" rel="stylesheet" type="text/css"/>
+<![endif]-->
+<!--[if IE 8]>
+<link href="/css/facelift_ie8.css" rel="stylesheet" type="text/css"/>
+<![endif]-->
+<!--[if IE 9]>
+<link href="/css/facelift_ie9.css" rel="stylesheet" type="text/css"/>
+<![endif]-->
+<script type="text/javascript" src="../../../js/lib/jquery/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../../../js/lib/jquery/jquery-migrate-1.2.1.min.js"></script>
+<link rel="stylesheet" href="../../../etc/designs/dhl/docroot/tracking/less/tracking.css" type="text/css">
+<script type="text/javascript">
+    // prevent dojo library from overwriting console object in modern browsers (e.g. FF28)
+    // dojo tests existence of firebug console method
+    if (window.console && !console["firebug"]) {
+        console["firebug"] = function() {};
+    }
+</script>
+<script type="text/javascript" src="../../../js/lib/dojo/dojo.js" djconfig="parseOnLoad: true,preventBackButtonFix: false"></script>
+    <script src="../../../loader/js.areaofinterestTemp.js" type="text/javascript"></script>
+
+<script src="../../../content/ca/fr.mainmenu.js" type="text/javascript" language="javascript"></script>
+<script src="../../../js/jQuery.MarketingStage.js" type="text/javascript" language="javascript"></script>
+<script src="../../../js/curtain_teaser.js" type="text/javascript" language="javascript"></script>
+<script src="../../../js/jQuery.StyledDropdown.js" type="text/javascript" language="javascript"></script>
+<script src="../../../js/facelift.js" type="text/javascript"></script>
+<script src="../../../js/flyout_nav.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            FlyoutMenu.setData(mainmenuServlet);
+
+            jQuery(document).ready(function () {
+
+                CurtainTeaser.init();
+            });
+        </script>
+    <script type="text/javascript">
+    
+
+    dojo.addOnLoad(function () {
+        // set the tab based on any URL at load-time
+        if (window.location.hash && window.location.hash.length>0 ) {
+            if( typeof switchPane != "undefined" ) {
+                var hash = window.location.hash.slice(1);   // strip leading "#"
+                var newTab = dijit.byId(hash); // default to 1st tab
+                if( typeof newTab != "undefined" ) {
+                    switchPane(newTab);
+                    window.scrollTo(0, 0);
+                } else {
+                    window.location.hash = window.location.hash;
+                }
+            } else {
+                window.location.hash = window.location.hash;
+            }
+        }
+    });
+    
+
+    function goTo(url) {
+        url.indexOf("/") == 0 ? document.location.pathname = url : document.location.href = url;
+    }
+
+    function getDocHeight() {
+        var D = document;
+        return Math.max(
+                Math.max(D.body.scrollHeight, D.documentElement.scrollHeight),
+                Math.max(D.body.offsetHeight, D.documentElement.offsetHeight),
+                Math.max(D.body.clientHeight, D.documentElement.clientHeight)
+        );
+    }
+
+
+    function updateIframeHeight(smepBaseURL) {
+        newHeight = parseInt(getDocHeight(), 10) + 10;
+        if (newHeight > 50) {
+            hiddenIframeHtml = '<iframe src="http://international.dhl.ca/fr/dhl_express/suivi_expedition/'&#32;+&#32;smepBaseURL&#32;+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;'/tools/XSSenabler.html?height='&#32;+&#32;newHeight&#32;+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;'"></iframe>';
+            document.getElementById('xssIframeContainer').innerHTML = hiddenIframeHtml;
+        }
+    }
+</script>
+</head><body>
+<!-- For support -->
+<!--
+            [ Date Compiled - Thu May 07 20:30:58 MYT 2015 | Mask - 12 ]
+-->
+<div id="skipToErrorDiv"
+     style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden ; display:none">
+    <a href='suivi_par_reference.html#ERROR_MESSAGES'>Skip to the error encountered during the form submit</a>
+</div>
+
+<div class="hide">
+    <a href="suivi_par_reference.html#content_main">Skip to content</a><br/> <a href="suivi_par_reference.html#header">Skip to service links: contact, tools, help, the group</a><br/> <a href="suivi_par_reference.html#quicksearch">Skip to search</a><br/><a href="suivi_par_reference.html#navigation_main">Skip to main navigation</a><br/><a href="suivi_par_reference.html#navigation_content">Skip to sub navigation</a><br/><a href="suivi_par_reference.html#footer">Skip to Footer with links to masthead, print, email a friend and disclaimer</a> </div>
+<a id="toTop"></a>
+<div class="main facelift" >
+        <div id="content_main_shadow" class="content_main_shadow">&nbsp;</div>
+    <div id="header" class="header faceliftHeader">
+    <a id="header"></a>
+        <div class="siteid"><div class="image">
+    <a href="../../../fr.html" title="Retour&nbsp;&agrave;&nbsp;la&nbsp;page&nbsp;d&rsquo;accueil">
+        <img src="../../../img/meta/dhl_logo.gif" alt="Retour&nbsp;&agrave;&nbsp;la&nbsp;page&nbsp;d&rsquo;accueil" width="134" height="42" id="logo" class="logo"/>
+        <img src="../../../js/lib/dijit/form/templates/blank.gif" class="blank_gif" alt="Retour&nbsp;&agrave;&nbsp;la&nbsp;page&nbsp;d&rsquo;accueil" /></a>
+</div>
+<div class="clear">&nbsp;</div></div>
+<div class="headerservicelinks"><div class="servicelinks">
+    <ul class="language-list">
+        <li><a class="firstItem" href="../../../en.html" target="_self">English</a></li><li class="defaultLang">Français</li></ul>
+    <ul>
+        <li><a class="contact-center" href="../../centre_de_contact.html" title="Centre de contact" target="_self">Centre de contact<img src="../../../js/lib/dijit/form/templates/blank.gif" class="blank_gif" alt="Centre de contact" /></a></li><li><a class="country-profile" href="../../country_profile.html" title="Profil du Pays" target="_self">Profil du Pays<img src="../../../js/lib/dijit/form/templates/blank.gif" class="blank_gif" alt="Profil du Pays" /></a></li><li><a class="dhl-global" title="DHL Global" href="http://www.dhl.com" target="_blank">DHL Global<img src="../../../js/lib/dijit/form/templates/blank.gif" class="blank_gif" alt="External Link / New Window: DHL Global" /></a></li></ul>
+    </div>
+</div>
+<div class="clearAll">&nbsp;</div>
+        </div>
+    <div class="navigation_main faceliftNavigationMain" style='display:block'>
+    <div class="mainnav"><a id="navigation_main"></a>
+<ul id="nav">
+    <li><a href="../dhl_express.html" class="nav_top"><span>Express</span></a>
+	<ul>
+		<li><a href="../dhl_express.html" class="navi">DHL Express</a></li>
+		<li><a class="navi" href="https://www.mydhl.dhl.com/landing?utm_source=CA&utm_medium=nav&utm_campaign=mydhl_link&ccOverride=CA&language=fr" target="_blank">MyDHL<img src="../../../js/lib/dijit/form/templates/blank.gif" class="blank_gif" alt="External Link / New Window" /></a></li>
+		<li><a href="../expedier.html" class="navi">Exp&eacute;dition</a></li>
+		<li><a href="../suivi_expedition.html" class="navi">Suivi</a></li>
+		<li><a href="../export.html" class="navi">Services d'exportation</a></li>
+		<li><a href="../import.html" class="navi">Services d&rsquo;importation</a></li>
+		<li><a href="../services_plus.html" class="navi">Services facultatifs</a></li>
+		<li><a href="../solutions_pme.html" class="navi">Solutions PME</a></li>
+		<li><a href="../e-commerce_et_support.html" class="navi">Centre de ressources</a></li>
+	</ul>
+</li>
+<li><a href="../../logistique.html" class="nav_top"><span>Logistique</span></a>
+	<ul>
+		<li><a href="../../logistique/transport_de_fret.html" class="navi">Transport de fret</a></li>
+		<li><a class="navi" href="http://www.exel.com/exel/exel_warehousing.jsp" target="_blank">Entreposage et Distribution<img src="../../../js/lib/dijit/form/templates/blank.gif" class="blank_gif" alt="External Link / New Window" /></a></li>
+		<li><a href="../../logistique/douanes_securite_et_assurance.html" class="navi">Douanes, S&eacute;curit&eacute; et Assurance</a></li>
+		<li><a class="navi" href="http://www.exel.com/exel/index.jsp" target="_blank">Solutions de cha&icirc;ne logistique<img src="../../../js/lib/dijit/form/templates/blank.gif" class="blank_gif" alt="External Link / New Window" /></a></li>
+	</ul>
+</li>
+<li><a href="../../mail.html" class="nav_top"><span>Courrier</span></a>
+</li>
+<li><a href="../../presse.html" class="nav_top"><span>Presse</span></a>
+	<ul>
+		<li><a href="../../presse/communiques.html" class="navi">Communiqu&eacute;s de presse</a></li>
+	</ul>
+</li>
+<li><a href="../../carrieres.html" class="nav_top"><span>Carri&egrave;res</span></a>
+	<ul>
+		<li><a href="../../carrieres/etudiants.html" class="navi">Etudiants</a></li>
+		<li><a href="../../carrieres/diplomes.html" class="navi">Dipl&ocirc;m&eacute;s</a></li>
+		<li><a href="../../carrieres/exploitation.html" class="navi">Production et support</a></li>
+		<li><a href="../../carrieres/gestion.html" class="navi">Management et Professionnels</a></li>
+		<li><a href="../../carrieres/emplois.html" class="navi">Emplois</a></li>
+		<li><a href="../../carrieres/esprit.html" class="navi">Travailler chez DHL</a></li>
+	</ul>
+</li>
+<li><a href="../../nous_connaitre.html" class="nav_top"><span>Nous conna&icirc;tre</span></a>
+	<ul>
+		<li><a href="../../nous_connaitre/portrait_de_lentreprise.html" class="navi">Portrait de l&rsquo;entreprise</a></li>
+		<li><a href="../../nous_connaitre/solutions_vertes.html" class="navi">Solutions vertes</a></li>
+		<li><a href="../../nous_connaitre/apercu_des_secteurs.html" class="navi">Aper&ccedil;u des secteurs</a></li>
+		<li><a href="../../nous_connaitre/responsabilite.html" class="navi">Responsabilit&eacute; de l&rsquo;entreprise</a></li>
+	</ul>
+</li>
+
+</ul>
+</div>
+<div class="staticquicksearch"><script type="text/javascript">
+    function trimBoth(str) {
+        return str.replace(/^\s\s*/, '').replace(/\s\s*$/, '');
+    }
+
+    function isEmptySearch(s) {
+        return ((s == null) || (s.length == 0));
+    }
+
+    function isAWB(awb) {
+        awb = trimBoth(awb);
+        if (isNaN(parseInt(awb))) return false;
+        if (awb.length != 10) return false;
+
+        var check1 = awb.substring(9, 10);
+        var check2 = awb.substring(0, 9) % 7;
+        return check1 == check2;
+    }
+
+    function checkFormSearch( theForm, defaultValue ) {
+        var trackingPage = '/content/ca/fr/dhl_express/suivi_expedition.html',
+            searchField = $( '#q' );
+
+        //get the query string
+        var queryString = searchField.val();
+
+        if ( !isEmptySearch( queryString ) && queryString != defaultValue ) {
+            if ( isAWB( queryString ) ) {
+                // transform field to match to tracking output
+                searchField.attr( 'name', 'AWB');
+                // remove unused fields for tracking
+                $( 'input[name=without]', theForm ).remove();
+                $( 'input[name=cqpages]', theForm ).remove();
+                $( 'input[name=category]', theForm ).remove();
+                // change form action
+                theForm.action = trackingPage;
+            }
+            return true;
+        }
+
+        return false;
+    }
+</script>
+<div class="quicksearch">
+        <form action="http://international.dhl.ca/content/ca/fr/recherche.shtml" name="quicksearch" onsubmit="return checkFormSearch(this, 'Recherche de contenu');">
+            <label for="q">Recherche de contenu</label>
+            <input type="text" id="q" class="q" name="q"/>
+            <input type="hidden" name="without" id="without" value="dropdown"/>
+            <input type="hidden" name="cqpages" value="on"/>
+            <input type="hidden" id="category" name="category" value="/content/ca/fr"/>
+            <button class="search" id="search" type="submit" value="Envoyer"></button>
+            </form>
+</div>
+</div>
+<div class="clearAll">&nbsp;</div>
+    </div>
+
+    <script type="text/javascript">
+
+        FlyoutMenu.init();
+
+    </script>
+
+    <div class="main_area " >
+        <div class="navigation_content">
+    <div class="parbase headlineflashimage"><div style="" id="flash_teaser_small">
+    <a href="suivi_par_reference.html#" target="" title="" alt="">
+<img height="120" width="200" class="cq-dd-flash" src="../../../content/ca/fr/dhl_express/suivi_expedition/suivi_par_reference/_jcr_content/headlineflashimage/image.img.jpg/1401983761000.jpg"></a>
+</div>
+</div>
+<div class="leftmenunav"><a id="navigation_content"></a>
+
+<div class="menu">
+    <div class="toplevel">
+	<h2>Express</h2>
+	<hr />
+</div><ul>	<li><a class="menuItem1" id="4888393" href="https://www.mydhl.dhl.com/landing?utm_source=CA&utm_medium=nav&utm_campaign=mydhl_link&ccOverride=CA&language=fr" target="_blank">MyDHL<img src="../../../js/lib/dijit/form/templates/blank.gif" class="blank_gif" alt="External Link / New Window" /></a></li>	<li><a class="menuItem1" id="4888394" href="../expedier.html">Exp&eacute;dition</a></li>	<li><a class="menuItem1Selected" id="4888395" href="../suivi_expedition.html">Suivi</a>	<ul><li class="iegap"><ul>		<li><a class="menuItem3" id="4888396" href="gestion_expeditions.html">Contr&ocirc;le des exp&eacute;ditions</a></li>		<li><a class="menuItem3" id="4888397" href="faq_suivi.html">FAQ sur le suivi</a></li>		<li><a class="menuItem3SelectedLast" id="4888398" href="suivi_par_reference.html">Suivi avec r&eacute;f&eacute;rence de l&rsquo;exp&eacute;diteur</a></li>		<li><a class="menuItem3" id="4888399" href="outils_suivi_expeditions.html">Outils de suivi</a></li>		<li><a class="menuItem3" id="4888400" href="preuve_de_livraison.html">Preuve de Livraison</a></li>	</ul></li></ul>	</li>	<li><a class="menuItem1" id="4888401" href="../export.html">Services d'exportation</a></li>	<li><a class="menuItem1" id="4888402" href="../import.html">Services d&rsquo;importation</a></li>	<li><a class="menuItem1" id="4888403" href="../services_plus.html">Services facultatifs</a></li>	<li><a class="menuItem1" id="4888404" href="../solutions_pme.html">Solutions PME</a></li>	<li><a class="menuItem1" id="4888405" href="../e-commerce_et_support.html">Centre de ressources</a></li></ul></div>
+</div>
+<div class="favoritesselector"><script type="text/javascript">
+    function bookmark_us(url, title) {
+        if (window.opera && window.print) { // opera
+            var elem = document.createElement('a');
+            elem.setAttribute('href', url);
+            elem.setAttribute('title', title);
+            elem.setAttribute('rel', 'sidebar');
+            elem.click();
+        } else if (document.all) { // ie
+            window.external.AddFavorite(url, title);
+        }
+    }
+</script>
+<script type="text/javascript">
+    // simply check to see if 'favorites' is supported by the browser (not displaying for firefox)
+    if ((document.all || (window.opera && window.print)) && !window.sidebar) {
+        document.write("<div id=\"startpageSelect\" class=\"startpageSelect\">");
+        document.write("\t<a class=\"favLink\" href=\"javascript:bookmark_us('http://international.dhl.ca/content/ca/fr/dhl_express/suivi_expedition/suivi_par_reference.html','Suivi avec référence de l’expéditeur');\">Bookmark Us</a>");
+        document.write("</div>");
+    }
+</script>
+</div>
+</div>
+<div class="content_main_container">
+<a id="content_main"></a>
+    <!-- if index page without yellow header, use content_main_index -->
+    <div class="content_main_index">
+        <div class="container_title">
+<div class="breadcrumb"><div style="" class="breadcrumb">
+    <img src="../../../img/common/arrow.gif" alt="Link arrow"/>&nbsp;<a href="../../../fr.html">DHL&nbsp;Canada</a>&nbsp;<span class="separator">|</span> <img src="../../../img/common/arrow.gif" alt="Link arrow"/>&nbsp;<a href="../dhl_express.html">Express</a>&nbsp;<span class="separator">|</span> <img src="../../../img/common/arrow.gif" alt="Link arrow"/>&nbsp;<a href="../suivi_expedition.html">Suivi</a>&nbsp;<span class="separator">|</span> <strong>Suivi&nbsp;avec&nbsp;r&eacute;f&eacute;rence&nbsp;de&nbsp;l&rsquo;exp&eacute;diteur</strong></div>
+</div>
+<div class="pagetitle"><h1 >Faites votre suivi à l'aide du numéro de référence personnalisé de l’expéditeur</h1>
+
+<div class="richtext">Avec DHL Express, vous pouvez suivre vos expéditions express à l’aide d’un numéro de référence personnalisé. L’ajout de ce numéro à votre connaissement permet aux titulaires d’un compte DHL de distinguer les différentes expéditions sur leur facture mensuelle.</div></div>
+</div>
+<div class="container">
+            <div class="parsys containerpar">
+<a name="containerpar_trackbyshipperrefere" style="visibility:hidden"></a><div class="trackbyshipperreference tracking section"><script type="text/javascript" src="../../../etc/designs/dhl/docroot/tracking/js.js"></script>
+<div class="tracking-results hd">
+    <script type="text/ejs" id="tracking-results-express-template">
+
+<%
+    var isBlank = dhl.lib.util.isBlank;
+
+    if (!isBlank(errors)) {
+%>
+    <div class="tracking-result-errors">
+        <h2><%= messages.error.label %></h2>
+        
+        <ul class="error-message<%= errors.length <= 1 ? ' error-message-flat' : '' %>">
+            <% can.each(errors, function(error, i) { %>
+            <li>
+                <% if (!isBlank(error.id)) { %>
+                <strong><%= error.id %> (<%= error.label %>):</strong>
+                <%= error.message %>
+                <% } else { %>
+                <strong><%= error.message %></strong>
+                <% } %>
+            </li>
+            <% }); %>
+        </ul>
+    </div>
+
+<%
+    }
+
+    if (!isBlank(results)) {
+        if (duplicates.total > 0) {
+%>
+    <div class="tracking-duplicates<%= results.length == duplicates.total ? ' all-results' : '' %>">
+        <p class="result-hint"><%= messages.duplicates.hint %></p>
+
+        <h2><%= messages.duplicates.label %></h2>
+        <%
+            var result;
+            can.each(duplicates.results, function(duplicate, j) {
+        %>
+        <form action="suivi_par_reference.html#" class="result-duplicates cl">
+            <table summary="<%= messages.duplicates.summary %>">
+                <colgroup>
+                    <col class="column-id">
+                    <col class="column-origin">
+                    <col class="column-destination">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th><%= results[0].label %></th>
+                        <th><%= results[0].origin.label %></th>
+                        <th><%= results[0].destination.label %></th>
+                    </tr>
+                </thead>
+                <tbody>
+                <%
+                    for (var k=0; k < duplicate.length; k++) {
+                        result = results[duplicate[k]];
+                %>
+                    <tr data-result-index="<%= duplicate[k] %>">
+                        <td class="waybill">
+                            <input type="radio" name="tracking-duplicates-id" value="<%= result.id %>" />
+                            <span><%= result.id %></span>
+                        </td>
+                        <td><%= !isBlank(result.origin) ? result.origin.value : '' %></td>
+                        <td><%= !isBlank(result.destination) ? result.destination.value : ''%></td>
+                    </tr>
+                <% } %>
+                </tbody>
+            </table>
+            <input type="submit" value="<%= messages.duplicates.button %>" />
+        </form>
+        <% }); %>
+    </div>
+    <% } %>
+
+    <div class="tracking-result-header cl<%= results.length == duplicates.total ? ' hd' : '' %>">
+        <h2><%= messages.label %></h2>
+    
+        <% if (results.length > 1) { %>
+        <p class="result-details-toggle-all">
+            <a class="arrow show" href="suivi_par_reference.html#"><%= messages.details.all.show %></a>
+        </p>
+        <% } %>
+    </div>
+
+    <%
+        can.each(results, function(result, i) {
+            var hasPieces = !isBlank(result.pieces, 'pIds') && result.pieces.pIds.length > 0,
+                hasEdd = !isBlank(result.edd);
+    %>
+    <div class="tracking-result express<%= result.duplicate ? ' hd' : '' %>">
+
+        <table class="result-summary<%= hasPieces ? ' result-has-pieces' : '' %><%= hasEdd ? ' result-has-edd' : '' %>" summary="<%= messages.details.summary %> <%= result.id %>">
+            <colgroup>
+                <col class="column-delivery-state">
+                <col class="column-waybill">
+                <col class="column-destination">
+                <% if (hasEdd || hasPieces) { %>
+                <col class="column-pieces">
+                <% } %>
+            </colgroup>
+            <tbody>
+                <tr>
+                    <td class="delivery code<%= result.delivery.code %>" title="<%= result.delivery.status.toUpperCase() %>"></td>
+                    <td class="waybill<%= isBlank(result.eventRemark) ? ' result-has-no-remarks' : '' %>">
+                        <strong><%= result.label %>: <%= result.id %></strong>
+
+                        <% if (!isBlank(result.signature)) { %>
+                        <span>
+                            <% if (!isBlank(result.signature.label)) { %>
+                            <%= result.signature.label %>:
+                            <% } %>
+                            <%= result.signature.signatory %>
+                        </span>
+                            <% if (!isBlank(result.signature.link, 'url')) { %>
+                        <span class="<%= result.signature.type == 'epod' ? 'result-signature-epod' : 'result-signature-proview' %>"><a class="arrow" target="_blank" href="http://international.dhl.ca/fr/dhl_express/suivi_expedition/&lt;%=&#32;result.signature.link.url&#32;%&gt;"><%= result.signature.link.label %></a></span>
+                            <% } %>
+                        <% } %>
+                    </td>
+                    <td>
+                        <% if (!isBlank(result.signature)) { %>
+                        <span><%= result.signature.description %></span>
+                        <% } %>
+
+                        <% if (!isBlank(result.origin)) { %>
+                        <span><%= result.origin.label %>:</span>
+                            <% if (!isBlank(result.origin.url)) { %>
+                        <a class="arrow" target="_blank" href="http://international.dhl.ca/fr/dhl_express/suivi_expedition/&lt;%=&#32;result.origin.url&#32;%&gt;"><%= result.origin.value %></a>
+                            <% } else { %>
+                        <%= result.origin.value %>
+                            <% } %>
+                        <% } %>
+
+                        <% if (isBlank(result.eventRemark) && !isBlank(result.destination)) { %>
+                        <span><%= result.destination.label %>:</span>
+                            <% if (!isBlank(result.destination.url)) { %>
+                        <a class="arrow" target="_blank" href="http://international.dhl.ca/fr/dhl_express/suivi_expedition/&lt;%=&#32;result.destination.url&#32;%&gt;"><%= result.destination.value %></a>
+                            <% } else { %>
+                        <%= result.destination.value %>
+                            <% } %>
+                        <% } %>
+                    </td>
+                    <% if (hasEdd || hasPieces) { %>
+                    <td>
+                        <% if (hasEdd) { %>
+                        <div class="result-edd" title="<%= result.edd.comments %>">
+                            <% if (isBlank(result.edd.comments) && isBlank(result.edd.product) && isBlank(result.edd.date)) { %>
+                            <span class="result-eddd-label-text"><%= result.edd.label %><%= !isBlank(result.edd.date) || !isBlank(result.edd.product) ? ':' : '' %></span>
+                            <% } else { %>
+                            <span class="result-eddd-label"><%= result.edd.label %><%= !isBlank(result.edd.date) || !isBlank(result.edd.product) ? ':' : '' %></span>
+                            <% } %>
+                            <% if (!isBlank(result.edd.date)) { %>
+                            <span class="result-eddd-date-text"><%= result.edd.date %></span>
+                            <% } %>
+                            <% if (!isBlank(result.edd.product)) { %> 
+                            <span class="result-eddd-product-text"><%= result.edd.product %></span>
+                            <% } %>
+                        </div>
+                        <% } %>
+
+                        <% if (hasPieces && result.pieces.showSummary) { %>
+                        <div class="result-pieces">
+                            <p>
+                                <%= result.pieces.value %>
+                                <%= result.pieces.label %>
+                            </p>
+
+                            <ul>
+                            <% can.each(result.pieces.pIds, function(pid, i) { %>
+                               <li><%= pid %></li>
+                            <% }); %>
+                            </ul>
+                        </div>
+                        <% } %>
+                    </td>
+                    <% } %>
+                </tr>
+                <% if (!isBlank(result.eventRemark)) { %>
+                <tr class="result-event-remarks">
+                    <td><strong></strong></td>
+                    <td>
+                        <span><%= messages.details.furtherdetail %>:</span>
+                        <p><%= result.eventRemark %></p>
+                    </td>
+                    <td>
+                        <% if (!isBlank(result.eventNextStep)) { %>
+                        <span><%= messages.details.nextstep %>:</span>
+                        <p><%= result.eventNextStep %></p>
+                        <% } %>
+                    </td>
+                    <% if (hasEdd || hasPieces) { %>
+                    <td></td>
+                    <% } %>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <% if (!isBlank(result.destination)) { %>
+                        <span><%= result.destination.label %>:</span>
+                            <% if (!isBlank(result.destination.url)) { %>
+                        <a class="arrow" target="_blank" href="http://international.dhl.ca/fr/dhl_express/suivi_expedition/&lt;%=&#32;result.destination.url&#32;%&gt;"><%= result.destination.value %></a>
+                            <% } else { %>
+                        <%= result.destination.value %>
+                            <% } %>
+                        <% } %>
+                    </td>
+                    <% if (hasEdd || hasPieces) { %>
+                    <td></td>
+                    <% } %>
+                </tr>
+                <% } %>
+            </tbody>
+        </table>
+
+        <% if (!isBlank(result.checkpoints)) { %>
+        <table class="result-checkpoints<%= results.length > 1 ? '' : ' show' %><%= hasPieces ? ' result-has-pieces' : '' %><%= hasEdd ? ' result-has-edd' : '' %>" summary="<%= messages.checkpoints.summary %>">
+             <colgroup>
+                <col class="column-counter">
+                <col class="column-description">
+                <col class="column-location">
+                <col class="column-time">
+                <% if (hasPieces) { %>
+                <col class="column-piece">
+                <% } %>
+            </colgroup>
+           <%
+                var storedCheckpointDate;
+                can.each(result.checkpoints, function(checkpoint, j) {
+                    if (checkpoint.date !== storedCheckpointDate) {
+                        storedCheckpointDate = checkpoint.date;
+                        if (j !== 0) {
+            %>
+            </tbody>
+                    <% } %>
+            <thead>
+                <tr>
+                    <th colspan="2"><%= checkpoint.date %></th>
+                    <th><%= result.checkpointLocationLabel %></th>
+                    <th><%= result.checkpointTimeLabel %></th>
+                    <% if (hasPieces) { %>
+                    <th><%= result.pieces.label %></th>
+                    <% } %>
+                </tr>
+            </thead>
+            <tbody>
+                <% } %>
+                    <tr>
+                        <td><%= checkpoint.counter %></td>
+                        <td><%= checkpoint.description %></td>
+                        <td><%= checkpoint.location %></td>
+                        <td><%= checkpoint.time %></td>
+                        <% if (hasPieces) { %>
+                        <td class="result-pieces">
+                            <% if (!isBlank(checkpoint.totalPieces)) { %>
+                            <p>
+                                <%= checkpoint.totalPieces %>
+                                <%= result.pieces.label %>
+                            </p>
+
+                            <ul>
+                            <% can.each(checkpoint.pIds, function(pid, i) { %>
+                               <li><%= pid %></li>
+                            <% }); %>
+                            </ul>
+                            <% } %>
+                        </td>
+                        <% } %>
+                    </tr>
+            <% }); %>
+            </tbody>
+        </table>
+        <% } %>
+
+        <% if (!isBlank(result.extraShipmentDetails)) { %>
+        <table class="result-extra-shipment-details<%= results.length > 1 ? '' : ' show' %>" summary="<%= messages.extraShipmentDetails.summary %>">
+             <colgroup>
+                <col class="column-from">
+                <col class="column-to">
+                <col class="column-information">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th colspan="3">
+                        <%= messages.extraShipmentDetails.header.details %>
+                        <% if (!isBlank(messages.extraShipmentDetails.help.url)) { %>
+                        <a href="http://international.dhl.ca/fr/dhl_express/suivi_expedition/&lt;%=&#32;messages.extraShipmentDetails.help.url&#32;%&gt;"><%= messages.extraShipmentDetails.help.label %></a>
+                        <% } %>
+                    </th>
+                </tr>
+                <tr>
+                    <th><%= messages.extraShipmentDetails.header.from %></th>
+                    <th><%= messages.extraShipmentDetails.header.to %></th>
+                    <th><%= messages.extraShipmentDetails.header.information %></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <% can.each(result.extraShipmentDetails.from, function(from) { %>
+                        <span><%= from %></span> 
+                        <% }); %>
+                    </td>
+                    <td>
+                        <% can.each(result.extraShipmentDetails.to, function(to) { %>
+                        <span><%= to %></span> 
+                        <% }); %>
+                    </td>
+                    <td>
+                        <%
+                            if (!isBlank(result.extraShipmentDetails.information)) {
+                                var information = result.extraShipmentDetails.information,
+                                    order = [3,5,0,4,6,2,1]; // establish a fixed property order
+
+                                for (var i=0; i < order.length; i++) {
+                                    if (!isBlank(information[order[i]])) {
+                        %>
+                        <span>
+                            <%= information[order[i]].label %>: <%= information[order[i]].value %>
+                            <% if ((order[i] == 0) && !isBlank(result.extraShipmentDetails.noteOnWeight)) { %> 
+                            <span class="note-on-weight" title="<%= result.extraShipmentDetails.noteOnWeight.value %>"><%= result.extraShipmentDetails.noteOnWeight.label %></span> 
+                            <% } %>
+                        </span> 
+                        <%
+                                    }
+                                }
+                            }
+                        %>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <% } %>
+
+        <p class="result-details-toggle">
+            <% if (results.length > 1) { %>
+            <a class="arrow show" href="suivi_par_reference.html#"><%= messages.details.single.show %></a>
+            <% } else { %>
+            <a class="arrow" href="suivi_par_reference.html#"><%= messages.details.single.hide %></a>
+            <% } %>
+        </p>
+    </div>
+    <% }); %>
+        
+    <% if (!isBlank(signature, 'link')) { %>
+    <p class="result-epods<%= results.length == duplicates.total ? ' hd' : '' %>">
+        <a class="arrow" target="_blank" href="http://international.dhl.ca/fr/dhl_express/suivi_expedition/&lt;%=&#32;signature.link.url&#32;%&gt;"><%= signature.link.label %></a>
+    </p>
+    <% } %>
+    
+    <button class="results-print tracking-button<%= results.length == duplicates.total ? ' hd' : '' %>">
+        <span><%= messages.print %></span>
+    </button>
+<% } %>
+</script><script type="text/javascript" class="config">
+    // <![CDATA[
+    ( new Object({"name":"tracking-results","config":{"iframe":{"targetOrigin":"http://www.dhl.de"},"measurement":{"enabled":false},"text":{"loading":{"progress":"Tracking results are being retrieved... Please stand by."},"messages":{"checkpoints":{"summary":"DHL Express shipments checkpoints"},"details":{"all":{"hide":"Masquer tout","show":"Afficher tout"},"furtherdetail":"Plus de Détails","nextstep":"Prochaines Étapes","single":{"hide":"Masquer les détails","show":"Afficher les détails"},"summary":"Your DHL Express shipment no."},"duplicates":{"button":"Résolution","hint":"Plusieurs expéditions avec le même identifiant sont disponibles dans nos systèmes. Veuillez sélectionner votre origine et votre destination ci-dessous. Ceci n'affectera pas votre délai de livraison.","label":"Résolution du doublon","summary":"DHL Express shipment duplicates"},"error":{"label":"Some of your queries resulted in an error","noResults":"Tracking results could not be loaded from server. Please try again later."},"extraShipmentDetails":{"header":{"details":"Shipment Details...","from":"From","information":"Shipment Information","to":"To"},"help":{"label":"Help","url":""},"summary":"DHL Express extra shipments details"},"label":"Résumé","print":"Print"},"webtrends":{"enabled":false},"multiple":{"tags":[],"url":"/fr/dhl_express/suivi_expedition/suivi_par_reference"},"single":{"tags":[]}}}}) );
+    // ]]>
+    </script>
+    </div><script type="text/javascript">
+// <![CDATA[
+    var shipperRef_Msg001 = "Les dates entrées ne représentent pas une tranche valide.";
+    var shipperRef_Msg004 = "Date invalide: du";
+    var shipperRef_Msg003 = "Numéro de référence de l'expéditeur";
+    var shipperRef_Msg006 = "Date: du";
+    var comm_Msg025 = "Champs obligatoire(s) vide(s)";
+    var comm_Msg026 = "Les champs suivants sont obligatoires et doivent contenir des données valides.";
+    var comm_Msg047 = "Erreurs dans le formulaire";
+
+    function enableWebtrendsTracking() {
+    
+    }
+// ]]>
+</script>
+
+<script type="text/javascript" src="../../../etc/designs/dhl/docroot/js/conversion/alertMessages.js"></script>
+<script type="text/javascript" src="../../../etc/designs/dhl/docroot/js/conversion/validateForm.js"></script>
+<script type="text/javascript" src="../../../etc/designs/dhl/docroot/js/cookie.js"></script>
+<script type="text/javascript" src="../../../etc/designs/dhl/docroot/tracking/js/tracking-utils-shipper-reference.js"></script>
+
+<div class="dhl tracking-form tracking-shipper-reference cl hd">
+    <div class="wrap1">
+        <div class="wrap2">
+            <div class="wrap3">
+                <div class="wrap4">
+                    <div class="wrap5">
+                        <div class="wrap6">
+                            <div class="wrap7">
+                                <div class="wrap8">
+                                    <form name="shipment" method="get" action="suivi_par_reference.html">
+                                        <fieldset>
+                                            <legend>Suivi avec référence de l’expéditeur</legend>
+                                            <p>Tous les champs indiqués avec une étoile (*) sont obligatoires</p>
+                                            <noscript>
+											<p class="error"><strong>Le javascript est indispensable pour pouvoir afficher les résultats de suivi. Veuillez autoriser le javascript dans votre navigateur.</strong></p>
+											</noscript>
+											                                            
+                                            <div id="trackingIndexErrorcontainerpar_trackbyshipperrefere" style="display: none;">
+                                                <p class="error" id="trackingIndexErrorHeadcontainerpar_trackbyshipperrefere"><strong></strong></p>
+                                                <p class="error" id="trackingIndexErrorBodycontainerpar_trackbyshipperrefere"></p>
+                                            </div>
+                                            
+                                            <div style="display:none;" id="errorDivison"></div>
+
+                                            <div class="tracking-fields-row first-row">
+                                                <label for="shipperReference">Référence de l'expéditeur:</label>
+                                                <div class="input_area">
+                                                    <input name="shipperReference" type="text" id="shipperReference" class="shippers_ref" value="" />
+                                                </div>
+                                            </div>
+
+                                            <div class="tracking-fields-row">
+                                                <label for="fromDayValue">Période d’expédition - du:</label>
+                                                <div class="input_area">
+                                                    <select name="fromDayValue" id="fromDayValue" class="date_range_from_d">
+    												    <option value=""></option>
+    												    <option value=""></option>
+    												    <option value=""></option>
+    												    <option value=""></option>
+    												    <option value=""></option>
+                                                    </select>
+                                                    <label class="no_label" for="fromMonthValue">Month</label>
+                                                    <select name="fromMonthValue" id="fromMonthValue" class="date_range_from_m">
+    												    <option value=""></option>
+    												    <option value=""></option>
+    												    <option value=""></option>
+    												    <option value=""></option>
+    												    <option value=""></option>
+                                                    </select>
+                                                    <label for="fromYearValue" class="no_label">Year</label>
+                                                    <select name="fromYearValue" id="fromYearValue" class="date_range_from_y">
+                                                         <option value="">2009</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="tracking-fields-row">
+                                                <label for="toDayValue">Période d’expédition - au:</label>
+                                                <div class="input_area">
+                                                    <select name="toDayValue" id="toDayValue" class="date_range_to_d">
+    												    <option value=""></option>
+    												    <option value=""></option>
+    												    <option value=""></option>
+    												    <option value=""></option>
+    												    <option value=""></option>
+                                                    </select>
+                                                    <label for="toMonthValue" class="no_label">Month</label>
+                                                    <select name="toMonthValue" id="toMonthValue" class="date_range_to_m">
+    												    <option value=""></option>
+    												    <option value=""></option>
+    												    <option value=""></option>
+    												    <option value=""></option>
+    												    <option value=""></option>
+                                                    </select>
+                                                    <label for="toYearValue" class="no_label">Year</label>
+                                                    <select name="toYearValue" id="toYearValue" class="date_range_to_y">
+                                                        <option value="">2009</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="tracking-fields-row">
+                                                <label for="accountNumber">Numéro de compte</label>
+                                                <div class="input_area">
+                                                    <input name="accountNumber" type="text" id="accountNumber" class="acc_no" value="" />
+                                                </div>
+                                            </div>
+
+                                            <div class="tracking-fields-row">
+                                                <label for="destCountryCode">Destination de l'expédition</label>
+                                                <div class="input_area">
+    					                        	<input type="hidden" id="destCountryCodeIndex" name="destCountryCodeIndex" value="" />
+    												<select id="destCountryCode" name="destCountryCode" class="ship_destination">
+    												   <option value="">Sélectionner un site</option>
+    												   
+                                                        <option value="af">Afghanistan</option>
+                                                        <option value="za">Afrique du Sud</option>
+                                                        <option value="al">Albanie</option>
+                                                        <option value="dz">Algérie</option>
+                                                        <option value="de">Allemagne</option>
+                                                        <option value="ad">Andorre</option>
+                                                        <option value="ao">Angola</option>
+                                                        <option value="ai">Anguilla</option>
+                                                        <option value="ag">Antigua-et-Barbuda</option>
+                                                        <option value="an">Antilles Hollandaises</option>
+                                                        <option value="sa">Arabie Saoudite</option>
+                                                        <option value="ar">Argentine</option>
+                                                        <option value="am">Arménie</option>
+                                                        <option value="aw">Aruba</option>
+                                                        <option value="au">Australie</option>
+                                                        <option value="at">Autriche</option>
+                                                        <option value="az">Azerbaïdjan</option>
+                                                        <option value="bs">Bahamas</option>
+                                                        <option value="bh">Bahreïn</option>
+                                                        <option value="bd">Bangladesh</option>
+                                                        <option value="bb">Barbade</option>
+                                                        <option value="be">Belgique</option>
+                                                        <option value="bz">Belize</option>
+                                                        <option value="bj">Bénin</option>
+                                                        <option value="bm">Bermudes</option>
+                                                        <option value="bt">Bhoutan</option>
+                                                        <option value="by">Biélorussie</option>
+                                                        <option value="bo">Bolivie</option>
+                                                        <option value="xb">Bonaire</option>
+                                                        <option value="ba">Bosnie Herzégovine</option>
+                                                        <option value="bw">Botswana</option>
+                                                        <option value="br">Brésil</option>
+                                                        <option value="bn">Brunei</option>
+                                                        <option value="bg">Bulgarie</option>
+                                                        <option value="bf">Burkina Faso</option>
+                                                        <option value="bi">Burundi</option>
+                                                        <option value="kh">Cambodge</option>
+                                                        <option value="cm">Cameroun</option>
+                                                        <option value="ca">Canada</option>
+                                                        <option value="cv">Cap Vert</option>
+                                                        <option value="cl">Chili</option>
+                                                        <option value="cy">Chypre</option>
+                                                        <option value="co">Colombie</option>
+                                                        <option value="km">Comores</option>
+                                                        <option value="cg">Congo</option>
+                                                        <option value="kp">Corée, R.P.D. de</option>
+                                                        <option value="cr">Costa Rica</option>
+                                                        <option value="ci">Côte d’Ivoire</option>
+                                                        <option value="hr">Croatie</option>
+                                                        <option value="cu">Cuba</option>
+                                                        <option value="cb">Curaçao</option>
+                                                        <option value="dk">Danemark</option>
+                                                        <option value="dj">Djibouti</option>
+                                                        <option value="dm">Dominique (pays)</option>
+                                                        <option value="ae">Emirats Arabes Unis</option>
+                                                        <option value="ec">Equateur</option>
+                                                        <option value="eg">Equateur</option>
+                                                        <option value="er">Erythrée</option>
+                                                        <option value="es">Espagne</option>
+                                                        <option value="ee">Estonie</option>
+                                                        <option value="us">Etats-Unis d’Amérique</option>
+                                                        <option value="et">Ethiopie</option>
+                                                        <option value="ru">Fédération de Russie</option>
+                                                        <option value="fi">Finlande</option>
+                                                        <option value="fr">France</option>
+                                                        <option value="ga">Gabon</option>
+                                                        <option value="gm">Gambie</option>
+                                                        <option value="ge">Géorgie</option>
+                                                        <option value="gh">Ghana</option>
+                                                        <option value="gi">Gibraltar</option>
+                                                        <option value="gr">Grèce</option>
+                                                        <option value="gd">Grenada</option>
+                                                        <option value="gl">Groenland</option>
+                                                        <option value="gp">Guadeloupe</option>
+                                                        <option value="gu">Guam</option>
+                                                        <option value="gt">Guatemala</option>
+                                                        <option value="gg">Guernesey</option>
+                                                        <option value="gw">Guinée Bissau</option>
+                                                        <option value="gq">Guinée Equatoriale</option>
+                                                        <option value="gy">Guyana</option>
+                                                        <option value="gf">Guyane (française)</option>
+                                                        <option value="ht">Haïti</option>
+                                                        <option value="hn">Honduras</option>
+                                                        <option value="hk">Hong Kong</option>
+                                                        <option value="hu">Hongrie</option>
+                                                        <option value="re">Ile de la Réunion</option>
+                                                        <option value="mu">Ile Maurice</option>
+                                                        <option value="cj">îles Anglo-Normandes</option>
+                                                        <option value="ky">Iles Caïman</option>
+                                                        <option value="cp">îles Canaries</option>
+                                                        <option value="ck">Iles de Cook</option>
+                                                        <option value="fk">Iles Falkland</option>
+                                                        <option value="fo">Iles Féroé</option>
+                                                        <option value="mh">Iles Marshall</option>
+                                                        <option value="sb">Iles Salomon</option>
+                                                        <option value="vi">Iles Vierges (américaines)</option>
+                                                        <option value="vg">Iles Vierges (britanniques)</option>
+                                                        <option value="in">Inde</option>
+                                                        <option value="id">Indonésie</option>
+                                                        <option value="iq">Irak</option>
+                                                        <option value="ir">Iran, République Islamique d’</option>
+                                                        <option value="ie">Irlande, République d’</option>
+                                                        <option value="is">Islande</option>
+                                                        <option value="il">Israël</option>
+                                                        <option value="it">Italie</option>
+                                                        <option value="jm">Jamaïque</option>
+                                                        <option value="jp">Japon</option>
+                                                        <option value="je">Jersey</option>
+                                                        <option value="jo">Jordanie</option>
+                                                        <option value="kz">Kazakhstan</option>
+                                                        <option value="ke">Kenya</option>
+                                                        <option value="kg">Kirghizstan</option>
+                                                        <option value="ki">Kiribati</option>
+                                                        <option value="kv">Kosovo</option>
+                                                        <option value="kw">Koweït</option>
+                                                        <option value="la">Laos, République Démocratique Populaire du</option>
+                                                        <option value="ls">Lesotho</option>
+                                                        <option value="lv">Lettonie</option>
+                                                        <option value="lb">Liban</option>
+                                                        <option value="lr">Libéria</option>
+                                                        <option value="ly">Libye (Jamahiriya Arabe Libyenne)</option>
+                                                        <option value="li">Liechtenstein</option>
+                                                        <option value="lt">Lituanie</option>
+                                                        <option value="lu">Luxembourg</option>
+                                                        <option value="mo">Macao</option>
+                                                        <option value="mk">Macédoine, République de</option>
+                                                        <option value="mg">Madagascar</option>
+                                                        <option value="my">Malaisie</option>
+                                                        <option value="mw">Malawi</option>
+                                                        <option value="mv">Maldives</option>
+                                                        <option value="ml">Mali</option>
+                                                        <option value="mt">Malte</option>
+                                                        <option value="ma">Maroc</option>
+                                                        <option value="mq">Martinique</option>
+                                                        <option value="mr">Mauritanie</option>
+                                                        <option value="yt">Mayotte</option>
+                                                        <option value="mx">Mexique</option>
+                                                        <option value="md">Moldavie, République de</option>
+                                                        <option value="mc">Monaco</option>
+                                                        <option value="mn">Mongolie</option>
+                                                        <option value="me">Montenegro</option>
+                                                        <option value="ms">Montserrat</option>
+                                                        <option value="mz">Mozambique</option>
+                                                        <option value="na">Namibie</option>
+                                                        <option value="nr">Nauru, République de</option>
+                                                        <option value="np">Népal</option>
+                                                        <option value="ni">Nicaragua</option>
+                                                        <option value="ne">Niger</option>
+                                                        <option value="ng">Nigéria</option>
+                                                        <option value="nu">Niué</option>
+                                                        <option value="no">Norvège</option>
+                                                        <option value="nc">Nouvelle Calédonie</option>
+                                                        <option value="nz">Nouvelle Zélande</option>
+                                                        <option value="om">Oman</option>
+                                                        <option value="ug">Ouganda</option>
+                                                        <option value="uz">Ouzbékistan</option>
+                                                        <option value="pk">Pakistan</option>
+                                                        <option value="pa">Panama</option>
+                                                        <option value="py">Paraguay</option>
+                                                        <option value="nl">Pays Bas</option>
+                                                        <option value="pe">Pérou</option>
+                                                        <option value="ph">Philippines</option>
+                                                        <option value="pl">Pologne</option>
+                                                        <option value="pf">Polynésie Française</option>
+                                                        <option value="pr">Porto Rico</option>
+                                                        <option value="pt">Portugal</option>
+                                                        <option value="qa">Qatar</option>
+                                                        <option value="cf">République centrafricaine</option>
+                                                        <option value="kr">République de Corée</option>
+                                                        <option value="gn">République de Guinée</option>
+                                                        <option value="cd">République Démocratique du Congo</option>
+                                                        <option value="do">République Dominicaine</option>
+                                                        <option value="cn">République Populaire de Chine</option>
+                                                        <option value="cz">République Tchèque</option>
+                                                        <option value="ro">Roumanie</option>
+                                                        <option value="gb">Royaume-Uni</option>
+                                                        <option value="rw">Rwanda</option>
+                                                        <option value="bl">Saint-Barthélemy</option>
+                                                        <option value="sx">Saint Croix</option>
+                                                        <option value="lc">Sainte-Lucie</option>
+                                                        <option value="ut">Saint Eustache</option>
+                                                        <option value="sq">Saint John</option>
+                                                        <option value="kn">Saint Kitts ja Nevis</option>
+                                                        <option value="mf">Saint Martin</option>
+                                                        <option value="tq">Saint Thomas</option>
+                                                        <option value="sp">Saipan</option>
+                                                        <option value="sv">Salvador</option>
+                                                        <option value="as">Samoa</option>
+                                                        <option value="ws">Samoa</option>
+                                                        <option value="st">Sao Tome et Principe</option>
+                                                        <option value="sn">Sénégal</option>
+                                                        <option value="rs">Serbie</option>
+                                                        <option value="sc">Seychelles</option>
+                                                        <option value="sl">Sierra Léone</option>
+                                                        <option value="sg">Singapour</option>
+                                                        <option value="sk">Slovaquie</option>
+                                                        <option value="si">Slovénie</option>
+                                                        <option value="so">Somalie</option>
+                                                        <option value="sd">Soudan</option>
+                                                        <option value="ss">South Sudan</option>
+                                                        <option value="lk">Sri Lanka</option>
+                                                        <option value="sh">St. Helena</option>
+                                                        <option value="vc">St. Vincent</option>
+                                                        <option value="se">Suède</option>
+                                                        <option value="ch">Suisse</option>
+                                                        <option value="sr">Suriname</option>
+                                                        <option value="sz">Swaziland</option>
+                                                        <option value="sy">Syrie</option>
+                                                        <option value="tj">Tadjikistan</option>
+                                                        <option value="ti">Tahiti</option>
+                                                        <option value="tw">Taiwan</option>
+                                                        <option value="tz">Tanzanie</option>
+                                                        <option value="td">Tchad</option>
+                                                        <option value="th">Thaïlande</option>
+                                                        <option value="tg">Togo</option>
+                                                        <option value="to">Tonga</option>
+                                                        <option value="ta">Tortola</option>
+                                                        <option value="tt">Trinidad et Tobago</option>
+                                                        <option value="tn">Tunisie</option>
+                                                        <option value="tc">Turks ja Caicos</option>
+                                                        <option value="tr">Turquie</option>
+                                                        <option value="tv">Tuvalu</option>
+                                                        <option value="ua">Ukraine</option>
+                                                        <option value="uy">Uruguay</option>
+                                                        <option value="vu">Vanuatu</option>
+                                                        <option value="ve">Venezuela</option>
+                                                        <option value="vn">Vietnam</option>
+                                                        <option value="ye">Yémen</option>
+                                                        <option value="zm">Zambie</option>
+                                                        <option value="zw">Zimbabwe</option>
+                                                        </select>
+                                                </div>
+                                            </div>
+
+                                            <button class="tracking-button">
+                                                <span>Voir le suivi</span>
+                                            </button>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clearAll"></div>
+
+    <script type="text/javascript" class="config">
+    // <![CDATA[
+        ( new Object( {
+            "name": "tracking-form",
+            "config": {
+                text: {
+                    newSearch: 'Effectuer une nouvelle recherche'
+                }
+            }
+        } ) );
+    // ]]>
+    </script>
+</div>
+<script type="text/javascript" class="config">
+// <![CDATA[
+( new Object({"name":"tracking","config":{"logEnabled":false,"params":{"countryCode":{"value":"ca"},"languageCode":{"value":"fr"}}}}) );
+// ]]>
+</script></div>
+<a name="containerpar_richtexteditor" style="visibility:hidden"></a><div class="richtexteditor section"><div class="standard_article dhl">
+    <div class="richtext">Si vous pr&eacute;f&eacute;rez parler personnellement avec un interlocuteur concernant la localisation de votre exp&eacute;dition, contactez le <a class="arrowLink" href="../../centre_de_contact/contacter_express.html">Service&nbsp;&agrave; la Client</a>.<br></div></div>
+</div>
+<a name="containerpar_standardarticle" style="visibility:hidden"></a><div class="standardarticle section"><!-- Standard Article -->
+<div class="standard_article dhl"><div>
+<h2>
+    Modalités et conditions</h2>
+
+<div class="richtext">Vous &ecirc;tes autoris&eacute; &agrave; utiliser ce syst&egrave;me uniquement pour le suivi des exp&eacute;ditions effectu&eacute;es via DHL par vous, pour votre compte ou qui vous sont destin&eacute;es. Aucune autre utilisation du syst&egrave;me ou des donn&eacute;es de suivi ne doit &ecirc;tre faite sans l&rsquo;autorisation pr&eacute;alable de DHL.</div></div>
+<div style="clear:both"></div>
+
+</div>
+</div>
+
+</div>
+</div>
+        <div class="clearAll">&nbsp;</div>
+
+        <div class="container_1_1">
+            <div class="container_slot_1">
+                <div class="parsys containerleftpar">
+
+</div>
+</div>
+            <div class="container_slot_2">
+                <div class="parsys containerrightpar">
+
+</div>
+</div>
+        </div>
+
+        <div class="clearAll">&nbsp;</div>
+    </div>
+
+<div class="content_cross_reference">
+    <div class="parsys crossrefpar">
+<a name="crossrefpar_referenceparagraph_0" style="visibility:hidden"></a><div class="parbase referenceparagraph section reference"><div style="display:inline;" class="cq-dd-paragraph"><div class="fasttrack"><script type="text/javascript" src="../../../etc/designs/dhl/docroot/tracking/js/tracking-utils-fasttrack.js"></script>
+<script type="text/javascript">
+// <![CDATA[
+    function enableWebtrendsFastTrackcontainerleftpar_fasttrack() {
+    
+    }
+
+    var def_tracking="1.0";
+    var errorStrings=new Array();
+    var newAWB=null;
+    var focusOnAWB=false;
+    var flpleaseSelectRed=false;
+    var shipTypes="Aucun type d'expédition n'a été sélectionné.";
+    var selectShipTypes="Veuillez sélectionner un type d'expédition.";
+    var brandText="";
+    var reasonForSuccess="";
+    var errorEmptys="Vous n'avez saisi aucune valeur.";
+    var notMoreThanOnes="Vous avez saisi trop de références d'expédition.";
+    var emptyTracks="Veuillez saisir un numéro de suivi.";
+    var flagSpaceEnter=false;
+    var showRed=false;
+    var reasonForReject="";
+    var awbs=null;
+    var awbsLength=0;
+    var countryCode_bnlx1="ca";
+    var Url1="http://www.dhl-tracknet.nl/cgi-bin-al/UFA100/NL/?type=U&zoekVeld=";
+    var validIACList1="|0|1|2|3|4|5|6|7|8|9|D|J|KNO|LA|LB|LE|LF|LH|ND|NL|OD|PA|SI|ST|UN|UT|VGL|VIB|";
+    var validDIList1="00|J|1J|2J|3J|4J|5J|6J";
+    var shipmentnumbersfieldfasts ="Suivez jusqu’à 10 numéros simultanément. Séparez-les par un virgule (,). Numéro international ou intérieur seulement.";
+    var toomanyNumberFt = "Trop de chiffres saisis.";
+    var lessthanTenNumberFt = "Veuillez saisir au maximum 10 numéros de suivi.";
+    var duplicatevalueFt = "Numéros d'expédition en doublon.";
+    var errorDuplicateNumberFt = "Vous avez saisi plusieurs fois le même numéro de suivi, ce qui génère une erreur.";
+    var correctRemoveFt = "Veuillez corriger ou effacer les données saisies.";
+    var errMixedFt = "La saisie combinée de numéros de bordereau et de numéros de pièce n'est pas autorisée.";
+    var combinationNotAllowedFt = "Cette combinaison n'est pas autorisée.";
+    var invalidEntryFt = "Saisie incorrecte.";
+    var entryFt = "Saisie";
+    var isNotValidAWBorPieceFt = "n'est pas un numéro d'expédition / de pièce valide.";
+    var entriesFt = "Vos saisies";
+    var areNotValidAWBorPieceFt = "ne sont pas des numéros d'expédition / de pièce valides.";
+    var correctAWBFt = "Veuillez corriger ou effacer ces numéros de bordereau.";
+    var invalidValuesFt = "Numéro d'expédition incorrect.";
+    var errZeroFt = "Veuillez saisir un numéro d'expédition valide.";
+    var notMoreThanOnesBenelux = "Please limit to one Benelux tracking number at a time.";
+    var toomanyInputs = "Vous avez saisi trop de références d'expédition.";
+    var pleaseEnters = "Veuillez saisir";
+    var onlyOnes = "un seul";
+    var finalPieceStrFT = "";
+    var myzeroArray = new Array();
+    var langCode = "fr";
+
+    function fntrackSubmitcontainerleftpar_fasttrack(form,uniqueID) {
+        var checkdata1 = document.getElementById("AWB_containerleftpar_fasttrack").value;
+        var checkdata = fnFTstrip(checkdata1);
+    
+        var innerMsg = 'Suivez jusqu’à 10 numéros simultanément. Séparez-les par un virgule (,). Numéro international ou intérieur seulement.';
+    
+        if (fnFTstrip(innerMsg) == checkdata) {
+            checkdata = "";
+        }
+
+        if (checkdata.length==0 ) {
+            fnFTupdateUI(emptyTracks, errorEmptys,'containerleftpar_fasttrack' );
+            return false;
+        }
+
+        if (countryCode_bnlx1 == "be" || countryCode_bnlx1 == "lu" || countryCode_bnlx1 == "nl") {
+            if (fnreterivebenexData(checkdata,uniqueID)) {
+                return true;
+            } else if (!(fnShowcontainerleftpar_fasttrack(form)) ) {
+                return false;
+            }
+        } else if (!(fnShowcontainerleftpar_fasttrack(form)) ) {
+            return false;
+        }
+        return true;
+    }
+
+    function fnShowcontainerleftpar_fasttrack(form) {
+        var data1 = document.getElementById("AWB_containerleftpar_fasttrack").value;
+        var data = fnFTstrip(data1);
+        var innerMsg = 'Suivez jusqu’à 10 numéros simultanément. Séparez-les par un virgule (,). Numéro international ou intérieur seulement.';
+
+        if (fnFTstrip(innerMsg) == data) {
+            data = "";
+        }
+
+        if (data.length==0 ) {
+            fnFTupdateUI(emptyTracks, errorEmptys,'containerleftpar_fasttrack' );
+            return false;
+        } else if (!(fnFTcheckFormcontainerleftpar_fasttrack(form))) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    function fnFTcheckFormcontainerleftpar_fasttrack(form) {
+        if( typeof( form ) == "undefined" ) form = document.forms[0];
+        var taval = document.getElementById("AWB_containerleftpar_fasttrack").value ;
+        awb=fnFTstrip( taval );
+    
+        
+        var brand = document.getElementById("hidBrand_containerleftpar_fasttrack").value;
+    
+        if( brand == "DHL" ) {
+            brandText = "International (à l’extérieur du Canada)";
+        }
+        
+        var brand = document.getElementById("hidBrand_containerleftpar_fasttrack").value;
+    
+        if( brand == "X" ) {
+            brandText = "Intérieur (à l’intérieur du Canada)";
+        }
+        
+        var brand = document.getElementById("hidBrand_containerleftpar_fasttrack").value;
+    
+        if( brand == "I" ) {
+            brandText = "DHL Europlus & Europack Identcode";
+        }
+        
+        var brand = document.getElementById("hidBrand_containerleftpar_fasttrack").value;
+    
+        if( brand == "R" ) {
+            brandText = "DHL Europlus & Europack Reference";
+        }
+        
+        var brand = document.getElementById("hidBrand_containerleftpar_fasttrack").value;
+    
+        if( brand == "DOC" ) {
+            brandText = "Danzas Order Code";
+        }
+        
+        var brand = document.getElementById("hidBrand_containerleftpar_fasttrack").value;
+    
+        if( brand == "HBN" ) {
+            brandText = "DGF/Danzas HAWB (House Air Way Bill)";
+        }
+        
+        var brand = document.getElementById("hidBrand_containerleftpar_fasttrack").value;
+    
+        if( brand == "CN" ) {
+            brandText = "DGF/Danzas Container Number";
+        }
+        
+        var brand = document.getElementById("hidBrand_containerleftpar_fasttrack").value;
+    
+        if( brand == "BOLN" ) {
+            brandText = "Danzas Bill of Lading/Masterbill";
+        }
+        
+        var brand = document.getElementById("hidBrand_containerleftpar_fasttrack").value;
+    
+        if( brand == "CRN" ) {
+            brandText = "DGF/Danzas Reference Number";
+        }
+        
+        var brand = document.getElementById("hidBrand_containerleftpar_fasttrack").value;
+    
+        if( brand == "HBN" ) {
+            brandText = "Exel Bill of Lading/Masterbill Number";
+        }
+        
+        awbs=new Array();
+        tmp=""; iterator=0; i=0;
+    
+        while(iterator<awb.length) {
+            c=awb.charAt(iterator);
+            if( brand=="HBN" || brand=="CRN" )
+            {
+                if ( c !="\t" && c !="\n"  && c !="\r"  )
+                {
+                    tmp=tmp+c;
+                }
+                else if (tmp!="")
+                {
+                    awbs[i]=tmp;
+                    tmp="";
+                    i++;
+                }
+            }
+            else
+            {
+                if ( c != "," && c !="\t" && c !="\n"  && c !="\r"  )
+                {
+                    tmp=tmp+c;
+                }
+                else if (tmp!="")
+                {
+                    awbs[i]=tmp;
+                    tmp="";
+                    i++;
+                }
+            }
+            iterator++;
+        }
+        if (tmp!="")
+        {
+            awbs[i]=tmp;
+        }
+        awbsLength = awbs.length;
+        if (brand=="")
+        {
+            fnFTupdateUI( shipTypes,selectShipTypes ,'containerleftpar_fasttrack');
+            return false;
+        }
+        else if ( (brand=="DHL") && !fnFTDHL(form,'containerleftpar_fasttrack') )
+        {
+            return false;
+        }
+        else if ( (brand=="I" || brand=="R") && !fnDPEE('containerleftpar_fasttrack') )
+        {
+            return false;
+        }
+        else if ( (brand=="HBN" || brand=="CRN") && !fnExel('containerleftpar_fasttrack') )
+        {
+            return false;
+        }
+        else if ( (brand=="CN" || brand=="BOLN" || brand=="DOC") && !fnDanzas(brand,'containerleftpar_fasttrack') )
+        {
+            return false;
+        }
+        flagSpaceEnter = false;
+        dd=new Date();
+        ms=dd.getTime()+600*86400000;
+        dd.setTime(ms);
+        days=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+        mons=new Array("Jan","Tue","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec");
+        if( typeof( dd.getFullYear ) != "undefined" ) year=dd.getFullYear();
+        else { year=dd.getYear(); if( year < 1900 ) year+=1900; }
+        year+="";
+        expire=days[dd.getDay()]+", "+zpadFt(dd.getDate())+"-"+mons[dd.getMonth()]+"-"+year.substring(2,year.length)+" 00:00:00 GMT";
+        setCookieFt( "AWBS_containerleftpar_fasttrack", awb, expire );
+        setCookieFt( "BRAND_containerleftpar_fasttrack", brandText, expire );
+        return true;
+    }
+
+    function fnFTCheckEntercontainerleftpar_fasttrack(event,uniqueID,form) {
+        var ElementID = "errorDivfastTrack_"+uniqueID;
+        var taskcenterid ="istaskcenter_"+uniqueID;
+        if(event && event.which){
+            event = event;
+            characterCode = event.which;
+        }
+        else{
+            event = event;
+            characterCode = event.keyCode;
+        }
+        var errormessage =document.getElementById(ElementID).innerHTML;
+        if (errormessage.length > 0)
+        {
+            var flag = "true";
+            var flag2 ="nohelpicon";
+            var istaskcenter=document.getElementById(taskcenterid).value;
+        }
+        //clean the error message present in the screen 
+        document.getElementById(ElementID).innerHTML=" ";
+    
+        if(characterCode == "13" || characterCode == "44" ){
+            fntrackSubmitcontainerleftpar_fasttrack(form,uniqueID);
+        }
+    }
+
+    function fnCheckExtURLcontainerleftpar_fasttrack( form,uniqueID ) {
+        var bnnelxdata1 = document.getElementById("AWB_containerleftpar_fasttrack").value.toUpperCase();
+        var bnnelxdata = fnFTstrip(bnnelxdata1);
+        var sel = "";
+        var selected_brand = "";
+        var selectedVal_brand ="";
+        var selectedVal = "";
+        var innerMsg = 'Suivez jusqu’à 10 numéros simultanément. Séparez-les par un virgule (,). Numéro international ou intérieur seulement.';
+        if(fnFTstrip(innerMsg) == bnnelxdata)
+        {
+            bnnelxdata = "";
+        }
+        if(bnnelxdata.length==0 ){
+            fnFTupdateUI(emptyTracks, errorEmptys,uniqueID );
+            return false;
+        }
+        //start changes  to pass brand  inside benelux check
+        
+        selectedVal_brand = document.getElementById("hidBrand_containerleftpar_fasttrack").value;
+        
+        if ((checkBeNeLux(bnnelxdata,'containerleftpar_fasttrack',selectedVal_brand))){
+            //alert("Inside true;");
+            var features = 'height=800,width=900,left=100,top=100,toolbar=yes,location=yes,directories=yes,status=yes,menubar=yes,scrollbars=yes,copyhistory=no,resizable=yes';
+            var newWindow = null;
+            var hideshipmenttype ="false";
+            
+            selectedVal = document.getElementById("hidBrand_containerleftpar_fasttrack").value;
+            
+            ChengeTheActionFT('containerleftpar_fasttrack' , '/content/ca/fr/dhl_express/suivi_expedition', selectedVal);
+            var trackingNumber = document.getElementById("AWB_containerleftpar_fasttrack").value;
+            
+            if( selectedVal == "DHL" )
+            {
+                var url = "";
+                if( url != "" )
+                {
+                    url = url.replace("#", trackingNumber);
+                    newWindow = window.open(url,'Tracking',features);
+                }
+                else
+                {
+                    if( fnShowcontainerleftpar_fasttrack( form ) )
+                    {
+                        
+                        if(selectedVal == "DHL"){
+                            document.getElementById("AWB_containerleftpar_fasttrack").value = finalPieceStrFT;
+                        }
+                        
+                        enableWebtrendsFastTrackcontainerleftpar_fasttrack();
+                        document.getElementById("trackingIndex_fast_containerleftpar_fasttrack").submit();
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+            }
+            
+            if( selectedVal == "X" )
+            {
+                var url = "http://www.loomisexpress.com/ca/wfTrackingStatus.aspx?PieceNumber=#";
+                if( url != "" )
+                {
+                    url = url.replace("#", trackingNumber);
+                    newWindow = window.open(url,'Tracking',features);
+                }
+                else
+                {
+                    if( fnShowcontainerleftpar_fasttrack( form ) )
+                    {
+                        
+                        if(selectedVal == "DHL"){
+                            document.getElementById("AWB_containerleftpar_fasttrack").value = finalPieceStrFT;
+                        }
+                        
+                        enableWebtrendsFastTrackcontainerleftpar_fasttrack();
+                        document.getElementById("trackingIndex_fast_containerleftpar_fasttrack").submit();
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+            }
+            
+        }
+    }
+// ]]>
+</script>
+
+<input type="hidden" name="brandvalue_containerleftpar_fasttrack" id="brandvalue_containerleftpar_fasttrack"	value="novalue"/>
+<input type="hidden" name="hideshipmenttype_containerleftpar_fasttrack" id="hideshipmenttype_containerleftpar_fasttrack"	value="true"/>
+
+<div class="module dhl">
+    <div class="fast_track_container">
+        <div class="wrap1">
+            <div class="wrap2">
+                <div class="wrap3">
+                    <div class="wrap4">
+                        <div class="wrap5">
+                            <div class="wrap6">
+                                <div class="wrap7">
+                                    <div class="wrap8">
+                                        <div class="fast_track">
+                                            <div class="fast_track_headline">Suivi</div>
+                                            <form name="trackingIndex_fast_containerleftpar_fasttrack" id="trackingIndex_fast_containerleftpar_fasttrack" method="get" action="../suivi_expedition.html" onsubmit="this.elements['AWB_containerleftpar_fasttrack'].value = (this.elements['AWB_containerleftpar_fasttrack'].value=='Suivez jusqu’à 10 numéros simultanément. Séparez-les par un virgule (,). Numéro international ou intérieur seulement.')?'':this.elements['AWB_containerleftpar_fasttrack'].value;">
+                                                <fieldset>
+                                                    <legend>Suivi</legend>
+                                                    <!--  these hidden type will use for pieceid validation on tracking.js -->
+                                                    <div id="trackingIndexErrorcontainerleftpar_fasttrack" style="display: none;">
+                                                        <!-- start error message -->
+                                                        <p id="trackingIndexErrorHeadcontainerleftpar_fasttrack" class="error"><strong></strong></p>
+                                                        <p id="trackingIndexErrorBodycontainerleftpar_fasttrack" class="error"></p>
+                                                        <!-- end error message -->
+                                                    </div>
+                                                    <!--  if java script is disabled messageifjavascripisdisabled -->
+                                                    <noscript>
+                                                        <p class="error"><strong>Le javascript est indispensable pour pouvoir afficher les résultats de suivi. Veuillez autoriser le javascript dans votre navigateur.</strong></p>
+                                                    </noscript>
+                                                    <div style="display:none" id="errorDivfastTrack_containerleftpar_fasttrack">
+            
+                                                    </div>
+                                                    <input type="hidden" id="istaskcenter_containerleftpar_fasttrack" value="nohelpicon"/>
+                                                    <!--  end changes  -->
+                                                    <input type="hidden" name="brand" id="hidBrand_containerleftpar_fasttrack"	value="DHL"/>
+                                                    <!-- End Optional Select Box-->
+                                                    <label for="AWB_containerleftpar_fasttrack" class="no_label">Tracking code</label>
+                                                    <span class="AWB_field_wrapper">
+            
+                                                    <textarea name="AWB" cols="30" rows="3" id="AWB_containerleftpar_fasttrack" class="code" wrap="soft"
+                                                              onfocus="this.value=(this.value==fnFTstrip('Suivez jusqu’à 10 numéros simultanément. Séparez-les par un virgule (,). Numéro international ou intérieur seulement.'))?'':this.value;"
+                                                              onblur="this.value=(fnFTstrip(this.value)=='')?'Suivez jusqu’à 10 numéros simultanément. Séparez-les par un virgule (,). Numéro international ou intérieur seulement.':this.value;"
+                                                              onkeypress="fnFTCheckEntercontainerleftpar_fasttrack(event,'containerleftpar_fasttrack',this);">Suivez jusqu’à 10 numéros simultanément. Séparez-les par un virgule (,). Numéro international ou intérieur seulement.</textarea>
+                                                    </span>
+
+                                                    <button type="button" class="redButton right track" id="trackbut_containerleftpar_fasttrack" value="Voir le suivi" onclick="javascript:fnCheckExtURLcontainerleftpar_fasttrack(this,'containerleftpar_fasttrack');">
+                                                        <span class="buttonInner">Voir le suivi</span>
+                                                    </button>
+
+                                                    <a href="../suivi_expedition.html" class="arrowLink">Options de suivi supplémentaires</a>
+                                                    </fieldset>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearAll"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+// <![CDATA[
+    initFormFt(document.forms["trackingIndex_fast_containerleftpar_fasttrack"], "containerleftpar_fasttrack", true );
+// ]]>
+</script>
+</div>
+</div></div>
+<a name="crossrefpar_referenceparagraph_1" style="visibility:hidden"></a><div class="parbase referenceparagraph section reference"><div style="display:inline;" class="cq-dd-paragraph"><div class="transactionteaser_0 transactionteaser"><div class="transactionteaser_white module dhl">
+    <div class="wrap1">
+        <div class="wrap2">
+            <div class="wrap3">
+                <div class="wrap4">
+                    <div class="wrap5">
+                        <div class="wrap6">
+                            <div class="wrap7">
+                                <div class="wrap8">
+                                    <div class="transaction_teaser_white">
+                                        <div class="transaction_teaser_headline">
+                                            </div>
+                                        <div class="parsys transparsys">
+<a name="containerleftpar_transactionteaser_0_transparsys_expandablelist_de" style="visibility:hidden"></a><div class="expandablelist section"><div class="dhl">
+    <div class="expandable_list">
+        <!--IE 6 ExpandableList RTL Bug Workaround -->
+        <!--[if IE 6]>
+        <div>&nbsp;</div>
+        <![endif]-->
+        <!--End Workaround-->
+        <div class="parsys ngwexpandableparsys expandablelistparsys">
+<div class="expandablelink section"><div dojoType="dijit.Expand_ListTitlePane" 
+             title="Preuve de livraison électronique (ePOD)"
+             open="false" duration="500">
+            <div class="expand_list_txt"><div class="parsys insideparsys">
+<a name="containerleftpar_transactionteaser_0_transparsys_expandablelist_de_expandablelistparsys_expandablelink_insideparsys_richtexteditor_0" style="visibility:hidden"></a><div class="richtexteditor section"><div class="standard_article dhl">
+    <div class="richtext">Maintenant disponible pour de nombreuses livraisons &agrave; travers le monde. Lorsque vous avez besoin d&rsquo;un document confirmant la livraison de votre envoi, cliquez sur le lien &laquo; Obtenir la preuve de livraison &raquo; sur votre suivi d&rsquo;exp&eacute;dition. Ou:</div></div>
+</div>
+<a name="containerleftpar_transactionteaser_0_transparsys_expandablelist_de_expandablelistparsys_expandablelink_insideparsys_standardlink" style="visibility:hidden"></a><div class="standardlink section"><a href="preuve_de_livraison.html#get_epod" class="anchorLink" title="" target="_self">
+    <span class="secret">Obtenez jusqu’à 25 preuves de livraison simultanément</span>Obtenez jusqu’à 25 preuves de livraison simultanément</a></div>
+<a name="containerleftpar_transactionteaser_0_transparsys_expandablelist_de_expandablelistparsys_expandablelink_insideparsys_standardlink_0" style="visibility:hidden"></a><div class="standardlink section"><a href="preuve_de_livraison.html" class="arrowLink" title="" target="_self">
+    <span class="secret">En savoir plus sur la preuve de livraison électronique (ePOD)</span>En savoir plus sur la preuve de livraison électronique (ePOD)</a></div>
+
+</div>
+<div class="parsys ngwstandardparsys insidestdparsys">
+</div>
+</div></div>
+            </div>
+<div class="expandablelink section"><div dojoType="dijit.Expand_ListTitlePane" 
+             title="Autres modes de suivi"
+             open="false" duration="500">
+            <div class="expand_list_txt"><div class="parsys insideparsys">
+<a name="containerleftpar_transactionteaser_0_transparsys_expandablelist_de_expandablelistparsys_expandablelink_0_insideparsys_standardlink" style="visibility:hidden"></a><div class="standardlink section"><a href="outils_suivi_expeditions.html#containerpar_standardarticle" class="anchorLink" title="" target="_self">
+    <span class="secret">DHL eTrack</span>DHL eTrack</a></div>
+<a name="containerleftpar_transactionteaser_0_transparsys_expandablelist_de_expandablelistparsys_expandablelink_0_insideparsys_standardlink_0" style="visibility:hidden"></a><div class="standardlink section"><a href="outils_suivi_expeditions.html#containerpar_richtexteditor" class="anchorLink" title="" target="_self">
+    <span class="secret">DHL ExpresSMS</span>DHL ExpresSMS</a></div>
+<a name="containerleftpar_transactionteaser_0_transparsys_expandablelist_de_expandablelistparsys_expandablelink_0_insideparsys_standardlink_1" style="visibility:hidden"></a><div class="standardlink section"><a href="outils_suivi_expeditions.html#containerpar_richtexteditor_1" class="anchorLink" title="" target="_self">
+    <span class="secret">DHL ExpressWAP</span>DHL ExpressWAP</a></div>
+<a name="containerleftpar_transactionteaser_0_transparsys_expandablelist_de_expandablelistparsys_expandablelink_0_insideparsys_standardlink_2" style="visibility:hidden"></a><div class="ghost section"></div>
+
+</div>
+<div class="parsys ngwstandardparsys insidestdparsys">
+</div>
+</div></div>
+            </div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clearAll"></div>
+</div></div>
+</div></div>
+
+</div>
+</div>
+
+</div>
+<div id="standardtemplatefooter-container" class="standardtemplatefooter"><div class="faceliftStandardFooter">
+    <div class="footer">
+        <a id="footer"></a>
+
+        <div class="container">
+            <div class="logo">
+
+                <a href="http://www.dp-dhl.com" title="Deutsche Post DHL" target="_blank">
+                    <img title="Deutsche Post DHL" height="34" alt="Deutsche Post DHL Logo" width="139" class="cq-dd-image" src="../../../content/ca/fr/_jcr_content/standardtemplatefooter/image.img.gif/1426007906789.gif"><!-- mig: whitespace -->
+
+                <img src="../../../js/lib/dijit/form/templates/blank.gif" class="blank_gif" alt="External Link / New Window: Deutsche Post DHL" /></a>
+            </div>
+            <div class="advanced_footer_content">
+                <div class="parsys containerfooterlinklist">
+<a name="standardtemplatefooter_containerfooterlinklist_footerlinklists" style="visibility:hidden"></a><div class="footerlinklists section"><div class="link_box"><h6><a href="../../centre_de_contact.html" class="contact_center" target="_self">Centre de contact</a></h6><ul><li><a href="../../centre_de_contact/contacter_express.html" class="arrowLink" target="_self">DHL Express</a></li><li><a href="http://international.dhl.ca/fr/centre_de_contact/contacter_global_forwarding.html" class="arrowLink" target="_self">DHL Global Forwarding</a></li><li><a href="../../centre_de_contact/contacter_globalmail.html" class="arrowLink" target="_self">DHL Global Mail</a></li><li><a href="http://international.dhl.ca/fr/centre_de_contact/contacter_supplychain.html" class="arrowLink" target="_self">DHL Supply Chain</a></li></ul></div>
+</div>
+<a name="standardtemplatefooter_containerfooterlinklist_footerlinklists_0" style="visibility:hidden"></a><div class="footerlinklists section"><div class="link_box"><h6><a href="../../nous_connaitre.html" class="arrowLink" target="_self">Nous conna&icirc;tre</a></h6><ul><li><a href="../../nous_connaitre/portrait_de_lentreprise.html" class="arrowLink" target="_self">Portrait de l&rsquo;entreprise</a></li><li><a href="../../nous_connaitre/solutions_vertes.html" class="arrowLink" target="_self">Solutions vertes</a></li><li><a href="../../nous_connaitre/apercu_des_secteurs.html" class="arrowLink" target="_self">Aper&ccedil;u des secteurs</a></li><li><a href="../../nous_connaitre/responsabilite.html" class="arrowLink" target="_self">Responsabilit&eacute; de l&rsquo;entreprise</a></li><li><a href="../../juridique/sensibilisation_a_la_fraude.html" class="arrowLink" target="_self">Sensibilisation &agrave; la fraude</a></li></ul></div>
+</div>
+
+</div>
+<div class="partnerlogolinks"><div class="partner_box">
+
+    <h6>Official Logistics Partner</h6>
+    <ul>
+        <li><a href="http://www.dhl.com/f1" target="_blank" title="Formula 1"><img src="../../../content/dam/General&#32;DHL&#32;pictures/Logos/IA_Refresh/f1_logo_3_63px.png"/><img src="../../../js/lib/dijit/form/templates/blank.gif" class="blank_gif" alt="External Link / New Window: Formula 1" /></a></li>
+<li><a href="http://www.dhl.com/fashionweek" target="_blank" title="Fashion Week"><img src="../../../content/dam/General&#32;DHL&#32;pictures/Logos/IA_Refresh/fw_logo_63px.png"/><img src="../../../js/lib/dijit/form/templates/blank.gif" class="blank_gif" alt="External Link / New Window: Fashion Week" /></a></li>
+<li><a href="http://www.dhl.com/gewandhaus" target="_blank" title="Gewandhaus Orchestra"><img src="../../../content/dam/General&#32;DHL&#32;pictures/Logos/IA_Refresh/gwo_logo_63px.png"/><img src="../../../js/lib/dijit/form/templates/blank.gif" class="blank_gif" alt="External Link / New Window: Gewandhaus Orchestra" /></a></li>
+<li><a href="http://www.dhl.com/manchesterunited" target="_blank" title="Manchester United"><img src="../../../content/dam/General&#32;DHL&#32;pictures/Logos/IA_Refresh/manu_logo_38px.png"/><img src="../../../js/lib/dijit/form/templates/blank.gif" class="blank_gif" alt="External Link / New Window: Manchester United" /></a></li>
+<li><a href="http://www.dhl.com/fe" target="_blank" title="Formula E"><img src="../../../content/dam/General&#32;DHL&#32;pictures/Logos/IA_Refresh/fia_formulae_championship_84x17.png"/><img src="../../../js/lib/dijit/form/templates/blank.gif" class="blank_gif" alt="External Link / New Window: Formula E" /></a></li>
+<li><a href="http://www.dhl.com/rugbyworldcup" target="_blank" title="Rugby World Cup 2015"><img src="../../../content/dam/General&#32;DHL&#32;pictures/Logos/IA_Refresh/Rugby_45x18.png"/><img src="../../../js/lib/dijit/form/templates/blank.gif" class="blank_gif" alt="External Link / New Window: Rugby World Cup 2015" /></a></li>
+<li><a href="http://www.dhl.com/cirquedusoleil" target="_blank" title="Cirque du Soleil"><img src="../../../content/dam/General&#32;DHL&#32;pictures/Logos/IA_Refresh/criquedusoleil_footer_060314.png"/><img src="../../../js/lib/dijit/form/templates/blank.gif" class="blank_gif" alt="External Link / New Window: Cirque du Soleil" /></a></li>
+</ul>
+</div>
+</div>
+</div>
+            <div class="footer_navigation">
+                <div class="standardtemplatefooterlinks"><ul><li class="firstItem"><a href="../../plan_du_site.html" title="Plan du site" target="_self">Plan du site<img src="../../../js/lib/dijit/form/templates/blank.gif" class="blank_gif" alt="Plan du site" /></a></li><li><a href="../../accessibilite.html" title="Accessibilit&eacute;" target="_self">Accessibilit&eacute;<img src="../../../js/lib/dijit/form/templates/blank.gif" class="blank_gif" alt="Accessibilit&eacute;" /></a></li><li><a href="../../juridique.html#t_c" title="Conditions" target="_self">Conditions<img src="../../../js/lib/dijit/form/templates/blank.gif" class="blank_gif" alt="Conditions" /></a></li><li><a href="../../juridique.html#privacy" title="Donn&eacute;es personnelles &amp; Cookies&nbsp;" target="_self">Donn&eacute;es personnelles &amp; Cookies&nbsp;<img src="../../../js/lib/dijit/form/templates/blank.gif" class="blank_gif" alt="Donn&eacute;es personnelles &amp; Cookies&nbsp;" /></a></li></ul></div>
+<p>
+                        <a href="../../juridique.html" target="_self">
+                            2015 © DHL International GmbH. All rights reserved.</a>
+                        </p>
+                    </div>
+
+            <div class="clearAll">&nbsp;</div>
+        </div>
+
+        </div>
+    </div>
+</div>
+</div>
+    <div  class="navigation_main_shadow">&nbsp;</div>
+
+    </div>
+    <!-- meta tags from source of thank you page -->
+<script type="text/javascript" src="../../../js/changeAnchorforPorrtal.js"></script>
+<script type="text/javascript">
+    var ctryName = 'ca';
+    chnageAnchor(isPortalReq(), ctryName);
+</script>
+
+
+<script type="text/javascript" src="../../../js/cookie.js"></script>
+<script type="text/javascript">
+    expdate = new Date();
+    var expireDay = '1';
+    FixCookieDate(expdate);
+    var cookieVal = '';
+    //expdate.setTime (expdate.getTime() + (31536000));
+    // alert("expireDay---found "+expireDay);
+    expdate.setTime(expdate.getTime() + (expireDay * 24 * 60 * 60 * 1000));
+    var campaignName_old = GetCookie('campaignName');
+    if (campaignName_old != null && campaignName_old != "") {
+        //alert('old campaignName found-->  '+campaignName_old+'!');
+
+    }
+    if (cookieVal != null && cookieVal != "") {
+        //alert('old campaignName not found-->  '+campaignName_old+'!');
+        //new cookies found set new value
+
+        SetCookie("campaignName", cookieVal, expdate, '/');
+
+    }
+</script>
+
+<!-- START OF SmartSource Data Collector TAG v10.2.0 -->
+<!-- Copyright (c) 2012 Webtrends Inc. All rights reserved. -->
+
+<script type="text/javascript">
+    var fpcdomain = 'international.dhl.ca';
+    var countrydcsid1 = 'dcsdcpp3ouz5bdepe48cvzzut_2z6u';
+    var countrydcsid2 = '';
+</script>
+
+<script type="text/javascript">
+    window.webtrendsAsyncInit = function () {
+        var dcs = new Webtrends.dcs().init({
+            dcsid: countrydcsid1, timezone: 1, fpcdom: fpcdomain, offsite: true, download: true, alllinks:false, plugins: {
+            }
+        }).track();
+
+        var dcs2 = new Webtrends.dcs().init({
+            dcsid: countrydcsid2, timezone: 1, fpcdom: fpcdomain, offsite: true, download: true, alllinks:false, plugins: {
+                //hm: {src: "//s.webtrends.com/js/webtrends.hm.js"},
+                facebook:{src:"//s.webtrends.com/js/webtrends.fb.js"},
+                yt:{src:"//s.webtrends.com/js/webtrends.yt.js"}
+            }
+        }).track();
+    };
+    (function () {
+        var s = document.createElement("script");
+        s.async = true;
+        s.src = "/js/webtrends/webtrends.js";
+        var s2 = document.getElementsByTagName("script")[0];
+        s2.parentNode.insertBefore(s, s2);
+    }());
+</script>
+<noscript>
+    <img alt="dcsimg" id="dcsimg" width="1" height="1" src="http://statse.webtrendslive.com/dcsdcpp3ouz5bdepe48cvzzut_2z6u/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;DCSCIP=192.168.95.0&amp;WT.tv=10.2.0&amp;dcssip=wwwinternational.dhl.ca"/>
+    <img alt="dcsimg" id="dcsimgDual" width="1" height="1" src="http://statse.webtrendslive.com//njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;DCSCIP=192.168.95.0&amp;WT.tv=10.2.0&amp;dcssip=wwwinternational.dhl.ca"/>
+</noscript>
+<!-- END OF SmartSource Data Collector TAG --></body></html>

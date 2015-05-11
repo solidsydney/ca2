@@ -1,0 +1,1307 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
+<meta name="title" content="Expédier en ligne, Préparer et gérer des envois en ligne | DHL Express"/>
+<meta name="keywords" content="expédier en ligne, online shipping, préparer un envoi en ligne, programmer un enlèvement, imprimer des étiquettes, gérer des envois, programmer un enlèvement, expédiez avec une carte bleue"/>
+<meta name="language" content="Français"/>
+<meta name="publisher" content="DHL"/>
+<meta name="description" content="Expédiez en ligne et gérez vos envois facilement avec DHL Express. Expédiez vos colis en ligne, Préparez un envoi, programmez un enlèvement, imprimez vos bordereaux et plus encore!"/>
+<!-- include webtrends tags -->
+<meta name="WT.cg_n" content="Canada" />
+<meta name="WT.cg_s" content="Express" />
+<meta name="DCSext.cg_sec3" content="Shipping" />
+<meta name="DCSext.language" content="French" />
+<meta name="WT.sp" content="Canada" />
+<meta name="WT.ti" content="Shipping | Ship Online | Canada | French" /><!-- include custom tags -->
+<title>Expédier en ligne, Préparer et gérer des envois en ligne | DHL Express</title>
+<link rel="shortcut icon" href="../../../img/favicon.gif" type="image/gif"/>
+<link href="../../../loader/css.genericcontentTemp.css" rel="stylesheet" type="text/css"/>
+<!--[if IE 6]>
+    <div id="emhelper" style="width:1em;height:1em;"></div>
+    <link href="/css/ie6_optimization.css" rel="stylesheet" type="text/css" />
+        <![endif]-->
+    <!--[if IE 7]>
+    <div id="emhelper" style="width:1em;height:1em;"></div>
+    <![endif]-->
+<style type="text/css">
+        <!--
+        #content_cross_reference {
+            width: 24em;
+        }
+
+        -->
+    </style>
+<link href="../../../css/facelift.css" rel="stylesheet" type="text/css"/>
+<!--[if IE 6]>
+<link href="/css/facelift_ie6.css" rel="stylesheet" type="text/css"/>
+<![endif]-->
+<!--[if IE 7]>
+<link href="/css/facelift_ie7.css" rel="stylesheet" type="text/css"/>
+<![endif]-->
+<!--[if IE 8]>
+<link href="/css/facelift_ie8.css" rel="stylesheet" type="text/css"/>
+<![endif]-->
+<!--[if IE 9]>
+<link href="/css/facelift_ie9.css" rel="stylesheet" type="text/css"/>
+<![endif]-->
+<script type="text/javascript" src="../../../js/lib/jquery/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../../../js/lib/jquery/jquery-migrate-1.2.1.min.js"></script>
+<link rel="stylesheet" href="../../../etc/designs/dhl/docroot/tracking/less/tracking.css" type="text/css">
+<script type="text/javascript">
+    // prevent dojo library from overwriting console object in modern browsers (e.g. FF28)
+    // dojo tests existence of firebug console method
+    if (window.console && !console["firebug"]) {
+        console["firebug"] = function() {};
+    }
+</script>
+<script type="text/javascript" src="../../../js/lib/dojo/dojo.js" djconfig="parseOnLoad: true,preventBackButtonFix: false"></script>
+    <script src="../../../loader/js.genericcontentTemp.js" type="text/javascript"></script>
+
+<script src="../../../content/ca/fr.mainmenu.js" type="text/javascript" language="javascript"></script>
+<script src="../../../js/jQuery.MarketingStage.js" type="text/javascript" language="javascript"></script>
+<script src="../../../js/curtain_teaser.js" type="text/javascript" language="javascript"></script>
+<script src="../../../js/jQuery.StyledDropdown.js" type="text/javascript" language="javascript"></script>
+<script src="../../../js/facelift.js" type="text/javascript"></script>
+<script src="../../../js/flyout_nav.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            FlyoutMenu.setData(mainmenuServlet);
+
+            jQuery(document).ready(function () {
+
+                CurtainTeaser.init();
+            });
+        </script>
+    <script type="text/javascript">
+    
+
+    dojo.addOnLoad(function () {
+        // set the tab based on any URL at load-time
+        if (window.location.hash && window.location.hash.length>0 ) {
+            if( typeof switchPane != "undefined" ) {
+                var hash = window.location.hash.slice(1);   // strip leading "#"
+                var newTab = dijit.byId(hash); // default to 1st tab
+                if( typeof newTab != "undefined" ) {
+                    switchPane(newTab);
+                    window.scrollTo(0, 0);
+                } else {
+                    window.location.hash = window.location.hash;
+                }
+            } else {
+                window.location.hash = window.location.hash;
+            }
+        }
+    });
+    
+
+    function goTo(url) {
+        url.indexOf("/") == 0 ? document.location.pathname = url : document.location.href = url;
+    }
+
+    function getDocHeight() {
+        var D = document;
+        return Math.max(
+                Math.max(D.body.scrollHeight, D.documentElement.scrollHeight),
+                Math.max(D.body.offsetHeight, D.documentElement.offsetHeight),
+                Math.max(D.body.clientHeight, D.documentElement.clientHeight)
+        );
+    }
+
+
+    function updateIframeHeight(smepBaseURL) {
+        newHeight = parseInt(getDocHeight(), 10) + 10;
+        if (newHeight > 50) {
+            hiddenIframeHtml = '<iframe src="http://international.dhl.ca/fr/dhl_express/expedier/'&#32;+&#32;smepBaseURL&#32;+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;'/tools/XSSenabler.html?height='&#32;+&#32;newHeight&#32;+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;'"></iframe>';
+            document.getElementById('xssIframeContainer').innerHTML = hiddenIframeHtml;
+        }
+    }
+</script>
+</head><body>
+<!-- For support -->
+<!--
+            [ Date Compiled - Sat May 02 00:05:21 CEST 2015 | Mask - 31 ]
+-->
+<div id="skipToErrorDiv"
+     style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden ; display:none">
+    <a href='ship_online.html#ERROR_MESSAGES'>Skip to the error encountered during the form submit</a>
+</div>
+
+<div class="hide">
+    <a href="ship_online.html#content_main">Skip to content</a><br/> <a href="ship_online.html#header">Skip to service links: contact, tools, help, the group</a><br/> <a href="ship_online.html#quicksearch">Skip to search</a><br/><a href="ship_online.html#navigation_main">Skip to main navigation</a><br/><a href="ship_online.html#navigation_content">Skip to sub navigation</a><br/><a href="ship_online.html#footer">Skip to Footer with links to masthead, print, email a friend and disclaimer</a> </div>
+<a id="toTop"></a>
+<div class="main facelift" >
+        <div id="content_main_shadow" class="content_main_shadow">&nbsp;</div>
+    <div id="header" class="header faceliftHeader">
+    <a id="header"></a>
+        <div class="siteid"><div class="image">
+    <a href="../../../fr.html" title="Retour&nbsp;&agrave;&nbsp;la&nbsp;page&nbsp;d&rsquo;accueil">
+        <img src="../../../img/meta/dhl_logo.gif" alt="Retour&nbsp;&agrave;&nbsp;la&nbsp;page&nbsp;d&rsquo;accueil" width="134" height="42" id="logo" class="logo"/>
+        <img src="../../../js/lib/dijit/form/templates/blank.gif" class="blank_gif" alt="Retour&nbsp;&agrave;&nbsp;la&nbsp;page&nbsp;d&rsquo;accueil" /></a>
+</div>
+<div class="clear">&nbsp;</div></div>
+<div class="headerservicelinks"><div class="servicelinks">
+    <ul class="language-list">
+        <li><a class="firstItem" href="../../../en.html" target="_self">English</a></li><li class="defaultLang">Français</li></ul>
+    <ul>
+        <li><a class="contact-center" href="../../centre_de_contact.html" title="Centre de contact" target="_self">Centre de contact<img src="../../../js/lib/dijit/form/templates/blank.gif" class="blank_gif" alt="Centre de contact" /></a></li><li><a class="country-profile" href="../../country_profile.html" title="Profil du Pays" target="_self">Profil du Pays<img src="../../../js/lib/dijit/form/templates/blank.gif" class="blank_gif" alt="Profil du Pays" /></a></li><li><a class="dhl-global" title="DHL Global" href="http://www.dhl.com" target="_blank">DHL Global<img src="../../../js/lib/dijit/form/templates/blank.gif" class="blank_gif" alt="External Link / New Window: DHL Global" /></a></li></ul>
+    </div>
+</div>
+<div class="clearAll">&nbsp;</div>
+        </div>
+    <div class="navigation_main faceliftNavigationMain" style='display:block'>
+    <div class="mainnav"><a id="navigation_main"></a>
+<ul id="nav">
+    <li><a href="../dhl_express.html" class="nav_top"><span>Express</span></a>
+	<ul>
+		<li><a href="../dhl_express.html" class="navi">DHL Express</a></li>
+		<li><a class="navi" href="https://www.mydhl.dhl.com/landing?utm_source=CA&utm_medium=nav&utm_campaign=mydhl_link&ccOverride=CA&language=fr" target="_blank">MyDHL<img src="../../../js/lib/dijit/form/templates/blank.gif" class="blank_gif" alt="External Link / New Window" /></a></li>
+		<li><a href="../expedier.html" class="navi">Exp&eacute;dition</a></li>
+		<li><a href="../suivi_expedition.html" class="navi">Suivi</a></li>
+		<li><a href="../export.html" class="navi">Services d'exportation</a></li>
+		<li><a href="../import.html" class="navi">Services d&rsquo;importation</a></li>
+		<li><a href="../services_plus.html" class="navi">Services facultatifs</a></li>
+		<li><a href="../solutions_pme.html" class="navi">Solutions PME</a></li>
+		<li><a href="../e-commerce_et_support.html" class="navi">Centre de ressources</a></li>
+	</ul>
+</li>
+<li><a href="../../logistique.html" class="nav_top"><span>Logistique</span></a>
+	<ul>
+		<li><a href="../../logistique/transport_de_fret.html" class="navi">Transport de fret</a></li>
+		<li><a class="navi" href="http://www.exel.com/exel/exel_warehousing.jsp" target="_blank">Entreposage et Distribution<img src="../../../js/lib/dijit/form/templates/blank.gif" class="blank_gif" alt="External Link / New Window" /></a></li>
+		<li><a href="../../logistique/douanes_securite_et_assurance.html" class="navi">Douanes, S&eacute;curit&eacute; et Assurance</a></li>
+		<li><a class="navi" href="http://www.exel.com/exel/index.jsp" target="_blank">Solutions de cha&icirc;ne logistique<img src="../../../js/lib/dijit/form/templates/blank.gif" class="blank_gif" alt="External Link / New Window" /></a></li>
+	</ul>
+</li>
+<li><a href="../../mail.html" class="nav_top"><span>Courrier</span></a>
+</li>
+<li><a href="../../presse.html" class="nav_top"><span>Presse</span></a>
+	<ul>
+		<li><a href="../../presse/communiques.html" class="navi">Communiqu&eacute;s de presse</a></li>
+	</ul>
+</li>
+<li><a href="../../carrieres.html" class="nav_top"><span>Carri&egrave;res</span></a>
+	<ul>
+		<li><a href="../../carrieres/etudiants.html" class="navi">Etudiants</a></li>
+		<li><a href="../../carrieres/diplomes.html" class="navi">Dipl&ocirc;m&eacute;s</a></li>
+		<li><a href="../../carrieres/exploitation.html" class="navi">Production et support</a></li>
+		<li><a href="../../carrieres/gestion.html" class="navi">Management et Professionnels</a></li>
+		<li><a href="../../carrieres/emplois.html" class="navi">Emplois</a></li>
+		<li><a href="../../carrieres/esprit.html" class="navi">Travailler chez DHL</a></li>
+	</ul>
+</li>
+<li><a href="../../nous_connaitre.html" class="nav_top"><span>Nous conna&icirc;tre</span></a>
+	<ul>
+		<li><a href="../../nous_connaitre/portrait_de_lentreprise.html" class="navi">Portrait de l&rsquo;entreprise</a></li>
+		<li><a href="../../nous_connaitre/solutions_vertes.html" class="navi">Solutions vertes</a></li>
+		<li><a href="../../nous_connaitre/apercu_des_secteurs.html" class="navi">Aper&ccedil;u des secteurs</a></li>
+		<li><a href="../../nous_connaitre/responsabilite.html" class="navi">Responsabilit&eacute; de l&rsquo;entreprise</a></li>
+	</ul>
+</li>
+
+</ul>
+</div>
+<div class="staticquicksearch"><script type="text/javascript">
+    function trimBoth(str) {
+        return str.replace(/^\s\s*/, '').replace(/\s\s*$/, '');
+    }
+
+    function isEmptySearch(s) {
+        return ((s == null) || (s.length == 0));
+    }
+
+    function isAWB(awb) {
+        awb = trimBoth(awb);
+        if (isNaN(parseInt(awb))) return false;
+        if (awb.length != 10) return false;
+
+        var check1 = awb.substring(9, 10);
+        var check2 = awb.substring(0, 9) % 7;
+        return check1 == check2;
+    }
+
+    function checkFormSearch( theForm, defaultValue ) {
+        var trackingPage = '/content/ca/fr/dhl_express/suivi_expedition.html',
+            searchField = $( '#q' );
+
+        //get the query string
+        var queryString = searchField.val();
+
+        if ( !isEmptySearch( queryString ) && queryString != defaultValue ) {
+            if ( isAWB( queryString ) ) {
+                // transform field to match to tracking output
+                searchField.attr( 'name', 'AWB');
+                // remove unused fields for tracking
+                $( 'input[name=without]', theForm ).remove();
+                $( 'input[name=cqpages]', theForm ).remove();
+                $( 'input[name=category]', theForm ).remove();
+                // change form action
+                theForm.action = trackingPage;
+            }
+            return true;
+        }
+
+        return false;
+    }
+</script>
+<div class="quicksearch">
+        <form action="http://international.dhl.ca/content/ca/fr/recherche.shtml" name="quicksearch" onsubmit="return checkFormSearch(this, 'Recherche de contenu');">
+            <label for="q">Recherche de contenu</label>
+            <input type="text" id="q" class="q" name="q"/>
+            <input type="hidden" name="without" id="without" value="dropdown"/>
+            <input type="hidden" name="cqpages" value="on"/>
+            <input type="hidden" id="category" name="category" value="/content/ca/fr"/>
+            <button class="search" id="search" type="submit" value="Envoyer"></button>
+            </form>
+</div>
+</div>
+<div class="clearAll">&nbsp;</div>
+    </div>
+
+    <script type="text/javascript">
+
+        FlyoutMenu.init();
+
+    </script>
+
+    <div class="main_area " >
+        <div class="navigation_content">
+    <div class="parbase headlineflashimage"><div style="" id="flash_teaser_small">
+    <a href="ship_online.html#" target="" title="" alt="">
+<img height="120" width="200" class="cq-dd-flash" src="../../../content/ca/fr/dhl_express/expedier/ship_online/_jcr_content/headlineflashimage/image.img.jpg/1401983752432.jpg"></a>
+</div>
+</div>
+<div class="leftmenunav"><a id="navigation_content"></a>
+
+<div class="menu">
+    <div class="toplevel">
+	<h2>Express</h2>
+	<hr />
+</div><ul>	<li><a class="menuItem1" id="1879737" href="https://www.mydhl.dhl.com/landing?utm_source=CA&utm_medium=nav&utm_campaign=mydhl_link&ccOverride=CA&language=fr" target="_blank">MyDHL<img src="../../../js/lib/dijit/form/templates/blank.gif" class="blank_gif" alt="External Link / New Window" /></a></li>	<li><a class="menuItem1Selected" id="1879738" href="../expedier.html">Exp&eacute;dition</a>	<ul><li class="iegap"><ul>		<li><a class="menuItem3SelectedLast" id="1879739" href="ship_online.html">Exp&eacute;dition en ligne</a></li>		<li><a class="menuItem3External" style=" " id="1879740" href="https://webshipping2.dhl.com/wsi/WSIServlet?moduleKey=Login&countryCode=CA&languageCode=fr" target="_blank">Obtenir une estimation de prix et de d&eacute;lai<img src="../../../js/lib/dijit/form/templates/blank.gif" class="blank_gif" alt="External Link / New Window" /></a></li>		<li><a class="menuItem3" id="1879741" href="../../country_profile/sites_centre_de_service_express.html">Trouver les sites DHL</a></li>		<li><a class="menuItem3" id="1879742" href="ouvrir_compte.html">Ouvrir un compte</a></li>		<li><a class="menuItem3" id="1879743" href="programmer_enlevement.html">Programmer une cueillette</a></li>		<li><a class="menuItem3" id="1879744" href="commande_de_fournitures.html">Commande de fournitures</a></li>		<li><a class="menuItem3" id="1879745" href="conseils_expedier.html">Conseils d&rsquo;exp&eacute;dition</a></li>		<li><a class="menuItem3" id="1879746" href="conseils_douanes.html">Soutien en douane</a></li>		<li><a class="menuItem3" id="1879747" href="import_express_online.html">Importation en ligne</a></li>		<li><a class="menuItem3" id="1879748" href="mydelivery.html">My Delivery</a></li>	</ul></li></ul>	</li>	<li><a class="menuItem1" id="1879749" href="../suivi_expedition.html">Suivi</a></li>	<li><a class="menuItem1" id="1879750" href="../export.html">Services d'exportation</a></li>	<li><a class="menuItem1" id="1879751" href="../import.html">Services d&rsquo;importation</a></li>	<li><a class="menuItem1" id="1879752" href="../services_plus.html">Services facultatifs</a></li>	<li><a class="menuItem1" id="1879753" href="../solutions_pme.html">Solutions PME</a></li>	<li><a class="menuItem1" id="1879754" href="../e-commerce_et_support.html">Centre de ressources</a></li></ul></div>
+</div>
+</div>
+<div class="content_main_container">
+<a id="content_main"></a>
+    <!--if index page without yellow header, use content_main_index-->
+    <div class="content_main_index">
+        <div class="container_title" style=''>
+            <div class="breadcrumb"><div style="" class="breadcrumb">
+    <img src="../../../img/common/arrow.gif" alt="Link arrow"/>&nbsp;<a href="../../../fr.html">DHL&nbsp;Canada</a>&nbsp;<span class="separator">|</span> <img src="../../../img/common/arrow.gif" alt="Link arrow"/>&nbsp;<a href="../dhl_express.html">Express</a>&nbsp;<span class="separator">|</span> <img src="../../../img/common/arrow.gif" alt="Link arrow"/>&nbsp;<a href="../expedier.html">Exp&eacute;dition</a>&nbsp;<span class="separator">|</span> <strong>Exp&eacute;dition&nbsp;en&nbsp;ligne</strong></div>
+</div>
+<div class="pagetitle"><h1 >Expédiez dès aujourd’hui</h1>
+
+<div class="richtext emptycontainer"></div></div>
+</div>
+<div class="container" style=''>
+            <div class="parsys containerpar">
+<a name="containerpar_richtexteditor" style="visibility:hidden"></a><div class="richtexteditor section"><div class="standard_article dhl">
+    <div class="richtext">Il n&rsquo;est pas n&eacute;cessaire d&rsquo;avoir un compte - vous pouvez exp&eacute;dier et payer avec votre carte de cr&eacute;dit!</div></div>
+</div>
+<a name="containerpar_tabsys" style="visibility:hidden"></a><div class="tabsys section"><script type="text/javascript">
+    var webtrends = [];
+    var pagePath = '/fr/dhl_express/expedier/ship_online';
+    var foundSearchMatch = false;
+    var cameFromSearch = false;
+    var searchQuery;
+    var searchMatchWith;
+
+    function loadFunctionSearch(tabpropID) {
+        if (cameFromSearch && !foundSearchMatch) {
+            var tabContents = document.getElementById(tabpropID).innerHTML.toLowerCase();
+            if (searchMatchWith == "exact_phrase") {
+                if (tabContents.indexOf(searchQuery) != -1) {
+                    foundSearchMatch = true;
+                    dijit.byId("mainNewsListTabContainercontainerpar_tabsys").selectChild(tabpropID);
+                }
+            } else {
+                var wordList = (searchQuery.indexOf(" ") == -1) ? ({0: searchQuery}) : searchQuery.split(" ");
+                if (searchMatchWith == "one_of_the_key_words") {
+                    for (var w in wordList) {
+                        if (tabContents.indexOf(wordList[w]) != -1) {
+                            foundSearchMatch = true;
+                            dijit.byId("mainNewsListTabContainercontainerpar_tabsys").selectChild(tabpropID);
+                            break;
+                        }
+                    }
+                } else { // searchMatchWith == "all_words"
+                    var allMatch = true;
+                    for (var w in wordList) {
+                        if (tabContents.indexOf(wordList[w]) == -1) {
+                            allMatch = false;
+                            break;
+                        }
+                    }
+                    if (allMatch) {
+                        foundSearchMatch = true;
+                        dijit.byId("mainNewsListTabContainercontainerpar_tabsys").selectChild(tabpropID);
+                    }
+                }
+            }
+        }
+    }
+    ;
+</script>
+<script type="text/javascript">
+    function findId(arr, obj) {
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i] == obj) {
+                return i;
+            }
+        }
+    }
+</script>
+<script type="text/javascript" src="../../../js/tabmodule.js"></script>
+<div id="tabsModul_1" class="tabsModul">
+    <div class="containerContentTabs">
+        <script type="text/javascript">
+            webtrends.push("containerContentoverview", "", "");
+        </script>
+        <div id="containerContentoverview"
+             class="containerContent"><span class="tabName"
+                                            style="display: none"><a href='ship_online.html#overview'>Présentation générale</a></span>
+            <script type="text/javascript">
+                jQuery(document).ready(function () {
+                    loadFunctionSearch("containerContentoverview");
+                });
+            </script>
+            <div class="par parsys"><a name="containerpar_tabsys_item1238511566186_par_standardarticle" style="visibility:hidden"></a><div class="standardarticle section"><!-- Standard Article -->
+<div class="standard_article dhl"><div>
+<h2>
+    Qu’est-ce que DHL Web Shipping?</h2>
+
+<div class="richtext">DHL Web Shipping est la solution d&rsquo;exp&eacute;dition en ligne qui vous aide &agrave; g&eacute;rer vos exp&eacute;ditions express. Elle vous permet d&rsquo;imprimer des &eacute;tiquettes, de programmer la cueillette de vos colis, d&rsquo;enregistrer des adresses, de suivre vos exp&eacute;ditions et bien plus encore.<br></div></div>
+<div style="clear:both"></div>
+
+</div>
+</div>
+<a name="containerpar_tabsys_item1238511566186_par_richtexteditor" style="visibility:hidden"></a><div class="richtexteditor section"><div class="standard_article dhl">
+    <div class="richtext">Si vous &ecirc;tes &agrave; la recherche de rapidit&eacute; et de pr&eacute;cision, DHL Web Shipping rationalisera votre processus d&rsquo;exp&eacute;dition et &eacute;liminera les documents administratifs papier. Cette solution est id&eacute;ale pour les petites et moyennes entreprises, les chefs de bureau, les r&eacute;ceptionnistes et personnes qui se d&eacute;placent beaucoup pour le travail. DHL Web Shipping est facile d&rsquo;emploi et ne requiert aucune formation particuli&egrave;re.<br></div></div>
+</div>
+<a name="containerpar_tabsys_item1238511566186_par_richtexteditor_0" style="visibility:hidden"></a><div class="ghost section"></div>
+<a name="containerpar_tabsys_item1238511566186_par_richtexteditor_3305" style="visibility:hidden"></a><div class="ghost section"></div>
+<a name="containerpar_tabsys_item1238511566186_par_richtexteditor_b351" style="visibility:hidden"></a><div class="ghost section"></div>
+<a name="containerpar_tabsys_item1238511566186_par_richtexteditor_a1aa" style="visibility:hidden"></a><div class="richtexteditor section"><div class="standard_article dhl">
+    <div class="richtext">Pas de compte est n&eacute;cessaire &ndash;  si vous ne avez pas un compte DHL, vous pouvez utiliser votre carte de cr&eacute;dit pour payer en ligne et vous &eacute;conomiserez 20% sur nos tarifs publi&eacute;s. Il ne vous faudra que quelques minutes pour pr&eacute;parer vos envois, alors pourquoi attendre? &Eacute;conomisez du temps et de l&rsquo;argent d&egrave;s aujourd&rsquo;hui! &nbsp;<a class="arrowLinkUp" href="https://webshipping2.dhl.com/wsi/WSIServlet?moduleKey=Login&countryCode=ca&languageCode=fr&createShip=y" target="_blank">Exp&eacute;diez en ligne d&egrave;s maintenant<img src="../../../js/lib/dijit/form/templates/blank.gif" class="blank_gif" alt="External Link / New Window" /></a><br></div></div>
+</div>
+<a name="containerpar_tabsys_item1238511566186_par_richtexteditor_1" style="visibility:hidden"></a><div class="ghost section"></div>
+<a name="containerpar_tabsys_item1238511566186_par_richtexteditor_2" style="visibility:hidden"></a><div class="ghost section"></div>
+<a name="containerpar_tabsys_item1238511566186_par_richtexteditor_3" style="visibility:hidden"></a><div class="ghost section"></div>
+<a name="containerpar_tabsys_item1238511566186_par_richtexteditor_4" style="visibility:hidden"></a><div class="ghost section"></div>
+<a name="containerpar_tabsys_item1238511566186_par_expandablelist" style="visibility:hidden"></a><div class="expandablelist section"><div class="dhl">
+    <div class="expandable_list">
+        <!--IE 6 ExpandableList RTL Bug Workaround -->
+        <!--[if IE 6]>
+        <div>&nbsp;</div>
+        <![endif]-->
+        <!--End Workaround-->
+        <div class="parsys ngwexpandableparsys expandablelistparsys">
+<div class="expandablelink section"><div dojoType="dijit.Expand_ListTitlePane" 
+             title="En savoir plus sur DHL Web Shipping"
+             open="false" duration="500">
+            <div class="expand_list_txt"><div class="parsys insideparsys">
+<a name="containerpar_tabsys_item1238511566186_par_expandablelist_expandablelistparsys_expandablelink_insideparsys_richtexteditor_0" style="visibility:hidden"></a><div class="ghost section"></div>
+<a name="containerpar_tabsys_item1238511566186_par_expandablelist_expandablelistparsys_expandablelink_insideparsys_richtexteditor" style="visibility:hidden"></a><div class="richtexteditor section"><div class="standard_article dhl">
+    <div class="richtext"><h3>Comment la solution DHL Web Shipping peut-elle vous aider?</h3><ul><li>Elle vous permet de rationaliser votre processus d&rsquo;exp&eacute;dition rapidement et efficacement</li><li>Elle vous permet de pr&eacute;parer et d&rsquo;imprimer vos connaissements</li><li>Elle vous aide &agrave; programmer la cueillette de vos envois en ligne</li><li>Elle &eacute;limine les erreurs de l&rsquo;&eacute;criture manuscrite qui peuvent provoquer des retards co&ucirc;teux</li><li>Elle vous permet de cr&eacute;er et d&rsquo;imprimer vos documents de douane pour les exp&eacute;ditions internationales</li><li>Elle conserve l&rsquo;historique de votre exp&eacute;dition jusqu&rsquo;&agrave; 90 jours</li><li>Elle vous permet de g&eacute;rer votre carnet d&rsquo;adresses et d&rsquo;acc&eacute;der rapidement et facilement &agrave; vos contacts</li><li>Elle envoie des notifications aux destinataires par courrier &eacute;lectronique</li><li>Elle vous permet de choisir le service express dont vous avez besoin en tenant compte des propositions de prix et de d&eacute;lais d&rsquo;acheminement en temps r&eacute;el</li></ul></div></div>
+</div>
+<a name="containerpar_tabsys_item1238511566186_par_expandablelist_expandablelistparsys_expandablelink_insideparsys_richtexteditor_1" style="visibility:hidden"></a><div class="ghost section"></div>
+<a name="containerpar_tabsys_item1238511566186_par_expandablelist_expandablelistparsys_expandablelink_insideparsys_richtexteditor_766" style="visibility:hidden"></a><div class="ghost section"></div>
+
+</div>
+<div class="parsys ngwstandardparsys insidestdparsys">
+<div class="standardlink section"><a href="ouvrir_compte.html" class="arrowLink" title="" target="_self">
+    Ouvrir un compte DHL Express</a></div>
+<div class="standardlink section"><a href="../../centre_de_contact/contacter_express.html" class="arrowLink" title="" target="_self">
+    <span class="secret">Des questions? Communiquez avec le Service à la clientèle de DHL Express</span>Des questions? Communiquez avec le Service à la clientèle de DHL Express</a></div>
+</div>
+</div></div>
+            </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+        <script type="text/javascript">
+            webtrends.push("containerContentgetting_started", "", "");
+        </script>
+        <div id="containerContentgetting_started"
+             class="containerContent"><span class="tabName"
+                                            style="display: none"><a href='ship_online.html#getting_started'>Pour commencer</a></span>
+            <script type="text/javascript">
+                jQuery(document).ready(function () {
+                    loadFunctionSearch("containerContentgetting_started");
+                });
+            </script>
+            <div class="par parsys"><a name="containerpar_tabsys_item1238511594959_par_richtexteditor_0" style="visibility:hidden"></a><div class="ghost section"></div>
+<a name="containerpar_tabsys_item1238511594959_par_richtexteditor" style="visibility:hidden"></a><div class="ghost section"></div>
+<a name="containerpar_tabsys_item1238511594959_par_richtexteditor_1" style="visibility:hidden"></a><div class="ghost section"></div>
+<a name="containerpar_tabsys_item1238511594959_par_richtexteditor_2" style="visibility:hidden"></a><div class="richtexteditor section"><div class="standard_article dhl">
+    <div class="richtext"><h3>Ce dont vous avez besoin pour commencer &agrave; exp&eacute;dier<em><strong><br></strong></em></h3>    <ul><li>Un num&eacute;ro de compte de DHL</li><li>Une adresse &eacute;lectronique, qui vous servira &eacute;galement d&rsquo;identifiant de connexion</li><li>Un ordinateur personnel avec acc&egrave;s &agrave; internet</li><li>Un navigateur Web (Internet Explorer version 6.0 ou sup&eacute;rieure, Firefox version 4.0 ou sup&eacute;rieure)</li><li>Une imprimante laser</li></ul></div></div>
+</div>
+<a name="containerpar_tabsys_item1238511594959_par_standardlink_0" style="visibility:hidden"></a><div class="standardlink section"><a href="ouvrir_compte.html" class="arrowLink" title="" target="_self">
+    Ouvrir un compte DHL Express</a></div>
+<a name="containerpar_tabsys_item1238511594959_par_standardlink_1" style="visibility:hidden"></a><div class="standardlink section"><a href="../../centre_de_contact/contacter_express.html" class="arrowLink" title="" target="_self">
+    <span class="secret">Des questions? Communiquez avec le Service à la clientèle de DHL Express</span>Des questions? Communiquez avec le Service à la clientèle de DHL Express</a></div>
+</div>
+</div>
+        <script type="text/javascript">
+            webtrends.push("containerContentfaqs", "", "");
+        </script>
+        <div id="containerContentfaqs"
+             class="containerContent"><span class="tabName"
+                                            style="display: none"><a href='ship_online.html#faqs'>Foire aux Questions</a></span>
+            <script type="text/javascript">
+                jQuery(document).ready(function () {
+                    loadFunctionSearch("containerContentfaqs");
+                });
+            </script>
+            <div class="par parsys"><a name="containerpar_tabsys_item1238511627874_par_expandablelist" style="visibility:hidden"></a><div class="expandablelist section"><div class="dhl">
+    <div class="expandable_list">
+        <!--IE 6 ExpandableList RTL Bug Workaround -->
+        <!--[if IE 6]>
+        <div>&nbsp;</div>
+        <![endif]-->
+        <!--End Workaround-->
+        <div class="parsys ngwexpandableparsys expandablelistparsys">
+<div class="expandablelink section"><div dojoType="dijit.Expand_ListTitlePane" 
+             title="Je veux commencer à expédier en ligne avec DHL.  Que dois-je faire?"
+             open="false" duration="500">
+            <div class="expand_list_txt"><div class="parsys insideparsys">
+<a name="containerpar_tabsys_item1238511627874_par_expandablelist_expandablelistparsys_expandablelink_insideparsys_richtexteditor" style="visibility:hidden"></a><div class="ghost section"></div>
+<a name="containerpar_tabsys_item1238511627874_par_expandablelist_expandablelistparsys_expandablelink_insideparsys_richtexteditor_0" style="visibility:hidden"></a><div class="ghost section"></div>
+<a name="containerpar_tabsys_item1238511627874_par_expandablelist_expandablelistparsys_expandablelink_insideparsys_richtexteditor_1" style="visibility:hidden"></a><div class="ghost section"></div>
+<a name="containerpar_tabsys_item1238511627874_par_expandablelist_expandablelistparsys_expandablelink_insideparsys_richtexteditor_2" style="visibility:hidden"></a><div class="richtexteditor section"><div class="standard_article dhl">
+    <div class="richtext">Que vous portiez votre exp&eacute;dition &agrave; votre compte DHL ou &agrave; votre carte de cr&eacute;dit, vous pouvez commencer &agrave; utiliser DHL Web Shipping d&egrave;s aujourd&rsquo;hui. Nous vous guiderons rapidement &agrave; travers le processus d&rsquo;exp&eacute;dition en ligne, pas &agrave; pas.<br></div></div>
+</div>
+<a name="containerpar_tabsys_item1238511627874_par_expandablelist_expandablelistparsys_expandablelink_insideparsys_richtexteditor_3" style="visibility:hidden"></a><div class="ghost section"></div>
+<a name="containerpar_tabsys_item1238511627874_par_expandablelist_expandablelistparsys_expandablelink_insideparsys_richtexteditor_4" style="visibility:hidden"></a><div class="ghost section"></div>
+<a name="containerpar_tabsys_item1238511627874_par_expandablelist_expandablelistparsys_expandablelink_insideparsys_richtexteditor_5" style="visibility:hidden"></a><div class="ghost section"></div>
+<a name="containerpar_tabsys_item1238511627874_par_expandablelist_expandablelistparsys_expandablelink_insideparsys_richtexteditor_6" style="visibility:hidden"></a><div class="ghost section"></div>
+<a name="containerpar_tabsys_item1238511627874_par_expandablelist_expandablelistparsys_expandablelink_insideparsys_richtexteditor_7" style="visibility:hidden"></a><div class="ghost section"></div>
+<a name="containerpar_tabsys_item1238511627874_par_expandablelist_expandablelistparsys_expandablelink_insideparsys_richtexteditor_8" style="visibility:hidden"></a><div class="ghost section"></div>
+<a name="containerpar_tabsys_item1238511627874_par_expandablelist_expandablelistparsys_expandablelink_insideparsys_richtexteditor_9" style="visibility:hidden"></a><div class="ghost section"></div>
+<a name="containerpar_tabsys_item1238511627874_par_expandablelist_expandablelistparsys_expandablelink_insideparsys_richtexteditor_10" style="visibility:hidden"></a><div class="richtexteditor section"><div class="standard_article dhl">
+    <div class="richtext">Si vous n&rsquo;avez pas de compte DHL, d&eacute;couvrez les avantages qu&rsquo;il pourrait vous apporter et demandez-en un d&egrave;s aujourd&rsquo;hui.<br></div></div>
+</div>
+<a name="containerpar_tabsys_item1238511627874_par_expandablelist_expandablelistparsys_expandablelink_insideparsys_standardlink_2" style="visibility:hidden"></a><div class="standardlink section"><a href="ouvrir_compte.html" class="arrowLink" title="" target="_blank">
+    Ouvrir un compte DHL<img src="../../../js/lib/dijit/form/templates/blank.gif" class="blank_gif" alt="New Window" /></a></div>
+
+</div>
+<div class="parsys ngwstandardparsys insidestdparsys">
+</div>
+</div></div>
+            </div>
+</div>
+</div>
+</div>
+</div>
+<a name="containerpar_tabsys_item1238511627874_par_expandablelist_0" style="visibility:hidden"></a><div class="expandablelist section"><div class="dhl">
+    <div class="expandable_list">
+        <!--IE 6 ExpandableList RTL Bug Workaround -->
+        <!--[if IE 6]>
+        <div>&nbsp;</div>
+        <![endif]-->
+        <!--End Workaround-->
+        <div class="parsys ngwexpandableparsys expandablelistparsys">
+<div class="expandablelink section"><div dojoType="dijit.Expand_ListTitlePane" 
+             title="Puis-je visualiser le tarif et le délai avant d’expédier ?"
+             open="false" duration="500">
+            <div class="expand_list_txt"><div class="parsys insideparsys">
+<a name="containerpar_tabsys_item1238511627874_par_expandablelist_0_expandablelistparsys_expandablelink_insideparsys_richtexteditor" style="visibility:hidden"></a><div class="richtexteditor section"><div class="standard_article dhl">
+    <div class="richtext">Oui ! DHL vous simplifie la vie en affichant les diff&eacute;rents services disponibles pour votre destination, avec pour chacun d&rsquo;eux le d&eacute;lai et le tarif correspondants. Vous n&rsquo;avez plus qu&rsquo;&agrave; s&eacute;lectionner l&rsquo;option la mieux adapt&eacute;e &agrave; vos besoins.<br></div></div>
+</div>
+
+</div>
+<div class="parsys ngwstandardparsys insidestdparsys">
+</div>
+</div></div>
+            </div>
+</div>
+</div>
+</div>
+</div>
+<a name="containerpar_tabsys_item1238511627874_par_expandablelist_1" style="visibility:hidden"></a><div class="expandablelist section"><div class="dhl">
+    <div class="expandable_list">
+        <!--IE 6 ExpandableList RTL Bug Workaround -->
+        <!--[if IE 6]>
+        <div>&nbsp;</div>
+        <![endif]-->
+        <!--End Workaround-->
+        <div class="parsys ngwexpandableparsys expandablelistparsys">
+<div class="expandablelink section"><div dojoType="dijit.Expand_ListTitlePane" 
+             title="Est-il obligatoire d’avoir un compte DHL pour expédier?"
+             open="false" duration="500">
+            <div class="expand_list_txt"><div class="parsys insideparsys">
+<a name="containerpar_tabsys_item1238511627874_par_expandablelist_1_expandablelistparsys_expandablelink_insideparsys_richtexteditor" style="visibility:hidden"></a><div class="ghost section"></div>
+<a name="containerpar_tabsys_item1238511627874_par_expandablelist_1_expandablelistparsys_expandablelink_insideparsys_richtexteditor_0" style="visibility:hidden"></a><div class="ghost section"></div>
+<a name="containerpar_tabsys_item1238511627874_par_expandablelist_1_expandablelistparsys_expandablelink_insideparsys_richtexteditor_1" style="visibility:hidden"></a><div class="ghost section"></div>
+<a name="containerpar_tabsys_item1238511627874_par_expandablelist_1_expandablelistparsys_expandablelink_insideparsys_richtexteditor_2" style="visibility:hidden"></a><div class="richtexteditor section"><div class="standard_article dhl">
+    <div class="richtext">Il n&rsquo;est pas n&eacute;cessaire d&rsquo;avoir un compte pour exp&eacute;dier en ligne. Si vous n&rsquo;avez pas de compte DHL, vous pouvez payer votre exp&eacute;dition par carte de cr&eacute;dit.<br></div></div>
+</div>
+<a name="containerpar_tabsys_item1238511627874_par_expandablelist_1_expandablelistparsys_expandablelink_insideparsys_richtexteditor_3" style="visibility:hidden"></a><div class="ghost section"></div>
+<a name="containerpar_tabsys_item1238511627874_par_expandablelist_1_expandablelistparsys_expandablelink_insideparsys_richtexteditor_4" style="visibility:hidden"></a><div class="ghost section"></div>
+<a name="containerpar_tabsys_item1238511627874_par_expandablelist_1_expandablelistparsys_expandablelink_insideparsys_richtexteditor_5" style="visibility:hidden"></a><div class="ghost section"></div>
+<a name="containerpar_tabsys_item1238511627874_par_expandablelist_1_expandablelistparsys_expandablelink_insideparsys_richtexteditor_6" style="visibility:hidden"></a><div class="ghost section"></div>
+<a name="containerpar_tabsys_item1238511627874_par_expandablelist_1_expandablelistparsys_expandablelink_insideparsys_richtexteditor_7" style="visibility:hidden"></a><div class="ghost section"></div>
+<a name="containerpar_tabsys_item1238511627874_par_expandablelist_1_expandablelistparsys_expandablelink_insideparsys_richtexteditor_8" style="visibility:hidden"></a><div class="ghost section"></div>
+<a name="containerpar_tabsys_item1238511627874_par_expandablelist_1_expandablelistparsys_expandablelink_insideparsys_richtexteditor_9" style="visibility:hidden"></a><div class="ghost section"></div>
+<a name="containerpar_tabsys_item1238511627874_par_expandablelist_1_expandablelistparsys_expandablelink_insideparsys_richtexteditor_10" style="visibility:hidden"></a><div class="richtexteditor section"><div class="standard_article dhl">
+    <div class="richtext">Cependant, si vous exp&eacute;diez r&eacute;guli&egrave;rement, il pourrait &ecirc;tre profitable d&rsquo;ouvrir un compte DHL, car il vous procure des avantages importants, comme des taux privil&eacute;gi&eacute;s, la facturation mensuelle et un plus grand acc&egrave;s aux services de DHL Express.<br></div></div>
+</div>
+<a name="containerpar_tabsys_item1238511627874_par_expandablelist_1_expandablelistparsys_expandablelink_insideparsys_standardlink_b093" style="visibility:hidden"></a><div class="standardlink section"><a href="ouvrir_compte.html" class="arrowLink" title="" target="_blank">
+    Ouvrir un compte DHL<img src="../../../js/lib/dijit/form/templates/blank.gif" class="blank_gif" alt="New Window" /></a></div>
+
+</div>
+<div class="parsys ngwstandardparsys insidestdparsys">
+</div>
+</div></div>
+            </div>
+</div>
+</div>
+</div>
+</div>
+<a name="containerpar_tabsys_item1238511627874_par_expandablelist_2" style="visibility:hidden"></a><div class="expandablelist section"><div class="dhl">
+    <div class="expandable_list">
+        <!--IE 6 ExpandableList RTL Bug Workaround -->
+        <!--[if IE 6]>
+        <div>&nbsp;</div>
+        <![endif]-->
+        <!--End Workaround-->
+        <div class="parsys ngwexpandableparsys expandablelistparsys">
+<div class="expandablelink section"><div dojoType="dijit.Expand_ListTitlePane" 
+             title="Est-il possible d’attribuer le même compte DHL à plusieurs personnes?"
+             open="false" duration="500">
+            <div class="expand_list_txt"><div class="parsys insideparsys">
+<a name="containerpar_tabsys_item1238511627874_par_expandablelist_2_expandablelistparsys_expandablelink_insideparsys_richtexteditor" style="visibility:hidden"></a><div class="richtexteditor section"><div class="standard_article dhl">
+    <div class="richtext">Oui, plusieurs utilisateurs peuvent s&rsquo;inscrire au m&ecirc;me compte DHL &agrave; la condition qu&rsquo;ils soient autoris&eacute;s &agrave; faire des exp&eacute;ditions.<br></div></div>
+</div>
+
+</div>
+<div class="parsys ngwstandardparsys insidestdparsys">
+</div>
+</div></div>
+            </div>
+</div>
+</div>
+</div>
+</div>
+<a name="containerpar_tabsys_item1238511627874_par_expandablelist_3" style="visibility:hidden"></a><div class="expandablelist section"><div class="dhl">
+    <div class="expandable_list">
+        <!--IE 6 ExpandableList RTL Bug Workaround -->
+        <!--[if IE 6]>
+        <div>&nbsp;</div>
+        <![endif]-->
+        <!--End Workaround-->
+        <div class="parsys ngwexpandableparsys expandablelistparsys">
+<div class="expandablelink section"><div dojoType="dijit.Expand_ListTitlePane" 
+             title="Est-il possible de facturer des envois aux destinataires plutôt que de les porter à mon compte DHL?"
+             open="false" duration="500">
+            <div class="expand_list_txt"><div class="parsys insideparsys">
+<a name="containerpar_tabsys_item1238511627874_par_expandablelist_3_expandablelistparsys_expandablelink_insideparsys_richtexteditor" style="visibility:hidden"></a><div class="richtexteditor section"><div class="standard_article dhl">
+    <div class="richtext">&Agrave; titre de titulaire d&rsquo;un compte DHL, vous pouvez, au moment o&ugrave; vous cr&eacute;ez une exp&eacute;dition dans DHL Web Shipping, indiquer &agrave; qui la facturer. Vous pouvez porter l&rsquo;exp&eacute;dition &agrave; votre compte (&agrave; la condition d&rsquo;y &ecirc;tre autoris&eacute;) ou la facturer au destinataire ou &agrave; un compte DHL d&rsquo;un tiers.<br></div></div>
+</div>
+
+</div>
+<div class="parsys ngwstandardparsys insidestdparsys">
+</div>
+</div></div>
+            </div>
+</div>
+</div>
+</div>
+</div>
+<a name="containerpar_tabsys_item1238511627874_par_expandablelist_4" style="visibility:hidden"></a><div class="expandablelist section"><div class="dhl">
+    <div class="expandable_list">
+        <!--IE 6 ExpandableList RTL Bug Workaround -->
+        <!--[if IE 6]>
+        <div>&nbsp;</div>
+        <![endif]-->
+        <!--End Workaround-->
+        <div class="parsys ngwexpandableparsys expandablelistparsys">
+<div class="expandablelink section"><div dojoType="dijit.Expand_ListTitlePane" 
+             title="Est-il possible de définir mes préférences les plus courantes?"
+             open="false" duration="500">
+            <div class="expand_list_txt"><div class="parsys insideparsys">
+<a name="containerpar_tabsys_item1238511627874_par_expandablelist_4_expandablelistparsys_expandablelink_insideparsys_richtexteditor" style="visibility:hidden"></a><div class="richtexteditor section"><div class="standard_article dhl">
+    <div class="richtext">Oui! Ceci vous permettra de cr&eacute;er vos exp&eacute;ditions tr&egrave;s rapidement &agrave; chaque fois que vous vous connecterez.  Lorsque vous vous enregistrez, vous pouvez configurer vos pr&eacute;f&eacute;rences selon vos besoins, par exemple votre emballage par d&eacute;faut ou vos pr&eacute;f&eacute;rences pour l&rsquo;enl&egrave;vement. Vous pouvez &eacute;galement modifier vos pr&eacute;f&eacute;rences tr&egrave;s facilement en mettant &agrave; jour votre profil.</div></div>
+</div>
+
+</div>
+<div class="parsys ngwstandardparsys insidestdparsys">
+</div>
+</div></div>
+            </div>
+</div>
+</div>
+</div>
+</div>
+<a name="containerpar_tabsys_item1238511627874_par_expandablelist_5" style="visibility:hidden"></a><div class="expandablelist section"><div class="dhl">
+    <div class="expandable_list">
+        <!--IE 6 ExpandableList RTL Bug Workaround -->
+        <!--[if IE 6]>
+        <div>&nbsp;</div>
+        <![endif]-->
+        <!--End Workaround-->
+        <div class="parsys ngwexpandableparsys expandablelistparsys">
+<div class="expandablelink section"><div dojoType="dijit.Expand_ListTitlePane" 
+             title="Est-il possible de télécharger des connaissements remplis à la main?"
+             open="false" duration="500">
+            <div class="expand_list_txt"><div class="parsys insideparsys">
+<a name="containerpar_tabsys_item1238511627874_par_expandablelist_5_expandablelistparsys_expandablelink_insideparsys_richtexteditor" style="visibility:hidden"></a><div class="richtexteditor section"><div class="standard_article dhl">
+    <div class="richtext">Non, il est impossible de t&eacute;l&eacute;charger des connaissements manuels &agrave; partir de notre site.  Cependant, vous pouvez remplir des connaissements en ligne &agrave; l&rsquo;aide de la solution DHL Web Shipping.<br></div></div>
+</div>
+
+</div>
+<div class="parsys ngwstandardparsys insidestdparsys">
+</div>
+</div></div>
+            </div>
+</div>
+</div>
+</div>
+</div>
+<a name="containerpar_tabsys_item1238511627874_par_expandablelist_6" style="visibility:hidden"></a><div class="expandablelist section"><div class="dhl">
+    <div class="expandable_list">
+        <!--IE 6 ExpandableList RTL Bug Workaround -->
+        <!--[if IE 6]>
+        <div>&nbsp;</div>
+        <![endif]-->
+        <!--End Workaround-->
+        <div class="parsys ngwexpandableparsys expandablelistparsys">
+<div class="expandablelink section"><div dojoType="dijit.Expand_ListTitlePane" 
+             title="Quel est le matériel/logis requis pour utiliser DHL Web Shipping?"
+             open="false" duration="500">
+            <div class="expand_list_txt"><div class="parsys insideparsys">
+<a name="containerpar_tabsys_item1238511627874_par_expandablelist_6_expandablelistparsys_expandablelink_insideparsys_richtexteditor" style="visibility:hidden"></a><div class="richtexteditor section"><div class="standard_article dhl">
+    <div class="richtext"><ul><li>Aucune installation n&eacute;cessaire. Vous avez seulement besoin d&rsquo;un ordinateur personnel avec connexion internet</li><li>Un navigateur Web (Internet Explorer version 6.0 ou sup&eacute;rieure, Firefox version 4.0 ou sup&eacute;rieure)</li><li>Une imprimante laser</li></ul></div></div>
+</div>
+
+</div>
+<div class="parsys ngwstandardparsys insidestdparsys">
+</div>
+</div></div>
+            </div>
+</div>
+</div>
+</div>
+</div>
+<a name="containerpar_tabsys_item1238511627874_par_expandablelist_7" style="visibility:hidden"></a><div class="expandablelist section"><div class="dhl">
+    <div class="expandable_list">
+        <!--IE 6 ExpandableList RTL Bug Workaround -->
+        <!--[if IE 6]>
+        <div>&nbsp;</div>
+        <![endif]-->
+        <!--End Workaround-->
+        <div class="parsys ngwexpandableparsys expandablelistparsys">
+<div class="expandablelink section"><div dojoType="dijit.Expand_ListTitlePane" 
+             title="Pourquoi ai-je besoin d’une imprimante laser? Puis-je utiliser une imprimante à jet d’encre?"
+             open="false" duration="500">
+            <div class="expand_list_txt"><div class="parsys insideparsys">
+<a name="containerpar_tabsys_item1238511627874_par_expandablelist_7_expandablelistparsys_expandablelink_insideparsys_richtexteditor" style="visibility:hidden"></a><div class="richtexteditor section"><div class="standard_article dhl">
+    <div class="richtext">Vous avez besoin d&rsquo;une imprimante laser pour imprimer vos connaissements et vos &eacute;tiquettes d&rsquo;exp&eacute;dition. Nous recommandons fortement l&rsquo;imprimante laser par assurer la qualit&eacute; de l&rsquo;impression du code &agrave; barres sur le connaissement. Les codes &agrave; barres imprim&eacute;s par jet d&rsquo;encre provoquent parfois des probl&egrave;mes de balayage, ce qui peut entra&icirc;ner des retards de livraison en raison du traitement manuel que cela occasionne. L&rsquo;utilisation d&rsquo;une imprimante laser permet d&rsquo;&eacute;viter ce probl&egrave;me.<br></div></div>
+</div>
+
+</div>
+<div class="parsys ngwstandardparsys insidestdparsys">
+</div>
+</div></div>
+            </div>
+</div>
+</div>
+</div>
+</div>
+<a name="containerpar_tabsys_item1238511627874_par_expandablelist_8" style="visibility:hidden"></a><div class="expandablelist section"><div class="dhl">
+    <div class="expandable_list">
+        <!--IE 6 ExpandableList RTL Bug Workaround -->
+        <!--[if IE 6]>
+        <div>&nbsp;</div>
+        <![endif]-->
+        <!--End Workaround-->
+        <div class="parsys ngwexpandableparsys expandablelistparsys">
+<div class="expandablelink section"><div dojoType="dijit.Expand_ListTitlePane" 
+             title="Je suis déjà inscrit et j’utilise le bon mot de passe, mais je ne parviens pas à me connecter."
+             open="false" duration="500">
+            <div class="expand_list_txt"><div class="parsys insideparsys">
+<a name="containerpar_tabsys_item1238511627874_par_expandablelist_8_expandablelistparsys_expandablelink_insideparsys_richtexteditor" style="visibility:hidden"></a><div class="richtexteditor section"><div class="standard_article dhl">
+    <div class="richtext">Si vous n&rsquo;arrivez pas &agrave; vous connecter apr&egrave;s avoir saisi correctement votre adresse courriel et votre mot de passe, essayez notre fonction &laquo; Vous avez oubli&eacute; votre mot de passe &raquo; ou communiquez avec votre bureau DHL local.<br></div></div>
+</div>
+<a name="containerpar_tabsys_item1238511627874_par_expandablelist_8_expandablelistparsys_expandablelink_insideparsys_standardlink_0" style="visibility:hidden"></a><div class="standardlink section"><a href="../../centre_de_contact/contacter_express.html" class="arrowLink" title="" target="_self">
+    <span class="secret">Communiquer avec le Service à la clientèle de DHL Express</span>Communiquer avec le Service à la clientèle de DHL Express</a></div>
+
+</div>
+<div class="parsys ngwstandardparsys insidestdparsys">
+</div>
+</div></div>
+            </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+        <script type="text/javascript">
+            webtrends.push("containerContentreference_materials", "", "");
+        </script>
+        <div id="containerContentreference_materials"
+             class="containerContent"><span class="tabName"
+                                            style="display: none"><a href='ship_online.html#reference_materials'>Documentation</a></span>
+            <script type="text/javascript">
+                jQuery(document).ready(function () {
+                    loadFunctionSearch("containerContentreference_materials");
+                });
+            </script>
+            <div class="par parsys"><a name="containerpar_tabsys_item1320926099046_par_standardlink_2681" style="visibility:hidden"></a><div class="standardlink section"><a href="http://www.dhlmarketing.com/tutorials/DHL_WSI/FR/swf/index.html" class="arrowLinkUp" title="" target="_blank">
+    <span class="secret">Voir la Démo</span>Voir la Démo<img src="../../../js/lib/dijit/form/templates/blank.gif" class="blank_gif" alt="External Link / New Window" /></a></div>
+<a name="containerpar_tabsys_item1320926099046_par_referenceparagraph_b" style="visibility:hidden"></a><div class="parbase referenceparagraph section reference"><div style="display:inline;" class="cq-dd-paragraph"><div class="parbase download_1 download"><!-- Create div -->
+<div class="downloads">
+    <div class="download">
+        <a href="../../../content/dam/downloads/g0/express/solutions/dhl_webshipping/dhl_web_shipping_user_guide_en.pdf" class="dlLink" title="" target="_blank">Guide Utilisateur DHL Web Shipping<img src="../../../js/lib/dijit/form/templates/blank.gif" class="blank_gif" alt="New Window" /></a>
+        <a href="../../../content/dam/downloads/g0/express/solutions/dhl_webshipping/dhl_web_shipping_user_guide_en.pdf" class="doc_pdf" target="_blank">(Type: Acrobat Reader file, Size: 14.1 MB)<img src="../../../js/lib/dijit/form/templates/blank.gif" class="blank_gif" alt="New Window" /></a>
+    </div>
+</div>
+</div>
+</div></div>
+<a name="containerpar_tabsys_item1320926099046_par_referenceparagraph_d" style="visibility:hidden"></a><div class="parbase referenceparagraph section reference"><div style="display:inline;" class="cq-dd-paragraph"><div class="parbase download_2 download"><!-- Create div -->
+<div class="downloads">
+    <div class="download">
+        <a href="../../../content/dam/downloads/g0/express/solutions/dhl_webshipping/dhl_wsi_brochure_en.pdf" class="dlLink" title="" target="_blank">Fiche produit DHL Web Shipping<img src="../../../js/lib/dijit/form/templates/blank.gif" class="blank_gif" alt="New Window" /></a>
+        <a href="../../../content/dam/downloads/g0/express/solutions/dhl_webshipping/dhl_wsi_brochure_en.pdf" class="doc_pdf" target="_blank">(Type: Acrobat Reader file, Size: 1.4 MB)<img src="../../../js/lib/dijit/form/templates/blank.gif" class="blank_gif" alt="New Window" /></a>
+    </div>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+        </div>
+    <div class="clearAll">&nbsp;</div>
+</div>
+</div>
+
+</div>
+</div>
+        <div class="clearAll">&nbsp;</div>
+    </div>
+
+<div class="content_cross_reference">
+    <div class="parsys crossrefpar">
+<a name="crossrefpar_referenceparagraph" style="visibility:hidden"></a><div class="parbase referenceparagraph section reference"><div style="display:inline;" class="cq-dd-paragraph"><div class="iconteaser_0 iconteaser"><div class="iconTeaser  module dhl">
+    <div class="iconImage iconLeft ">
+                                            <a href="https://www.mydhl.dhl.com?language=fr" title="" target="_blank">
+                                                <span class="secret">Expédier en ligne dès maintenant</span>
+                                                <img src="../../../content/dam/General&#32;DHL&#32;pictures/Icons/Small&#32;teasers_70x50/dhl_express_icon_70x50.jpg"/><img src="../../../js/lib/dijit/form/templates/blank.gif" class="blank_gif" alt="External Link / New Window" /></a>
+                                            </div>
+                                        <h2>
+                                            <a href="https://www.mydhl.dhl.com?language=fr" title="" target="_blank">
+                                                <span class="secret">Expédier en ligne dès maintenant</span>
+                                                Expédier en ligne dès maintenant<img src="../../../js/lib/dijit/form/templates/blank.gif" class="blank_gif" alt="External Link / New Window" /></a>
+                                            </h2>
+                                        <span class="standard_link_alignment">linkContainerCenter</span>
+                                        <span class="expandable_link_alignment">linkContainerCenter</span>
+                                        <div class="parsys transparsys">
+<a name="containerleftpar_iconteaser_0_transparsys_standardlink_340d" style="visibility:hidden"></a><div class="standardlink section"><a href="https://www.mydhl.dhl.com?language=fr" class="arrowLinkUp" title="" target="_blank">
+    <span class="secret">Clients en compte</span>Clients en compte<img src="../../../js/lib/dijit/form/templates/blank.gif" class="blank_gif" alt="External Link / New Window" /></a></div>
+<a name="containerleftpar_iconteaser_0_transparsys_standardlink_ea4" style="visibility:hidden"></a><div class="standardlink section"><a href="https://webshipping2.dhl.com/wsi/WSIServlet?moduleKey=Login&countryCode=ca&languageCode=fr&createShip=y" class="arrowLinkUp" title="" target="_blank">
+    <span class="secret">Payer avec une carte de crédit et économisez 20%</span>Payer avec une carte de crédit et économisez 20%<img src="../../../js/lib/dijit/form/templates/blank.gif" class="blank_gif" alt="External Link / New Window" /></a></div>
+
+</div>
+</div></div>
+</div></div>
+<a name="crossrefpar_componentseparator_3" style="visibility:hidden"></a><div class="parbase section componentseparator"><div class="spacer">&nbsp;</div>
+</div>
+<a name="crossrefpar_referenceparagraph_c" style="visibility:hidden"></a><div class="parbase referenceparagraph section reference"><div style="display:inline;" class="cq-dd-paragraph"><div class="flashmodule flashmodule_9192"><div id="genericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192">
+    </div>
+
+<script type="text/javascript">
+    var previousCountHoldergenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192 = 0;
+    
+    var moviedatagenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192 = new Array(1);
+    
+    var arrayindexgenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192 = eval('1' - '1');
+    if (isNaN(arrayindexgenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192)) {
+        var arrayindexgenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192 = 0;
+    }
+
+    moviedatagenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192[arrayindexgenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192] = new Array(4);
+    moviedatagenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192[arrayindexgenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192][0] = eval('15' * 1000);
+    moviedatagenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192[arrayindexgenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192][1] =0;
+
+
+    var paramMapflashgenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192 = {};
+    
+
+    paramMapflashgenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192.flashvars = 'assetRSL=/content/dam/Campaigns/Express_Campaigns/tdi/FontEmbedder.swf&contentXMLPath=/content/dam/Campaigns/Express_Campaigns/tdi/xml/content_tdi_220x165_ca_fr.xml';
+    
+    moviedatagenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192[arrayindexgenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192][2] = paramMapflashgenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192;
+    moviedatagenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192[arrayindexgenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192][3] = true;
+    
+
+    function getprobofURLgenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192() {
+        var rand = (Math.floor(Math.random() * 100));
+        
+
+        if (rand >=0 && rand <= 100) {
+            return '1' - 1;
+
+        }
+        else {
+
+            var randum = Math.floor(Math.random() * 1);
+            return randum;
+
+        }
+
+        
+
+
+    }
+
+
+    </script>
+
+<script type="text/javascript">
+
+//start to select first flash file
+var randomnumbergenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192 = 0;
+
+
+
+if (isNaN(randomnumbergenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192)) {
+    randomnumbergenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192 = Math.floor(Math.random() *1)
+}
+//var firsttimetocall = moviedata[randomnumber][0];
+
+var firsttimetocallgenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192 = moviedatagenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192[randomnumbergenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192][0];
+
+
+//alert( "probability of url"+randomnumber);
+//alert("randam number--->"+randomnumber);
+var moviePathsgenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192 = new Array(1);
+
+moviePathsgenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192[0] = "/content/dam/Campaigns/Express_Campaigns/tdi/dhl_220x165_tdi.swf";
+
+
+var flashvarsgenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192 = {};
+var paramsgenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192 = {
+    //start changes by   /to fix top nav appearing behind flash component
+    wmode: "transparent",
+    bgcolor: "FFCC00",
+    movie: moviePathsgenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192[randomnumbergenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192]
+};
+if(randomnumbergenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192 == 0 ){
+flashvarsgenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192.assetRSL = "/content/dam/Campaigns/Express_Campaigns/tdi/FontEmbedder.swf";
+}
+if(randomnumbergenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192 == 0 ){
+flashvarsgenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192.contentXMLPath = "/content/dam/Campaigns/Express_Campaigns/tdi/xml/content_tdi_220x165_ca_fr.xml";
+}
+
+var attributesgenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192 = {
+    //id: "flashvideo"
+};
+
+var lmsize = 1;
+if ((lmsize == 0) || ( moviedatagenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192[randomnumbergenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192][3])) {
+    swfobject.embedSWF(moviePathsgenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192[randomnumbergenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192], "genericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192", "220", "165", "9.0.0", "/swf/expressInstall.swf", flashvarsgenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192, paramsgenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192, attributesgenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192);
+}
+
+function timedRefreshgenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192(timeoutPeriod) {
+    setTimeout("changeFlashfilegenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192();", timeoutPeriod);
+}
+//this function is added to genrate sequence of number
+function getSequencegenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192() {
+    var limit = '1';
+
+    //var havetoReturn = eval(previouscount + '1')
+    var havetoReturn = eval(eval(previousCountHoldergenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192) + 1)
+
+    if (havetoReturn == limit) {
+
+        previousCountHoldergenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192 = eval('0');
+        return eval('0');
+
+    }
+    else {
+
+        previousCountHoldergenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192 = havetoReturn;
+        return havetoReturn;
+
+    }
+
+
+}
+//end chnages s added to genrate sequence of number
+
+function changeFlashfilegenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192() {
+    
+    //alert(" time is valid and prob is not  valid");
+    var randomnumbergenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192 = getSequencegenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192()
+    
+
+    if (isNaN(randomnumbergenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192)) {
+        randomnumbergenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192 = Math.floor(Math.random() *1)
+    }
+    // alert( "probability of url"+randomnumber);
+    var moviePathsgenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192 = new Array(1);
+    
+    moviePathsgenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192[0] = "/content/dam/Campaigns/Express_Campaigns/tdi/dhl_220x165_tdi.swf";
+    
+
+    var flashid = "genericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192";
+    //alert("the flash id is ----->"+flashid);
+    //alert(flashid);
+    var objTag = document.getElementById(flashid);
+    if (objTag != null) {
+        var paramgenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192 = moviedatagenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192[randomnumbergenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192][2];
+        var flashvarsgenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192 = {};
+        var paramsgenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192 = {
+            //start changes by   /to fix top nav appearing behind flash component
+            wmode: "transparent",
+            bgcolor: "FFCC00",
+            movie: moviePathsgenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192[randomnumbergenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192]
+        };
+        var attributesgenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192 = {
+
+        };
+        for (var key in paramgenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192) {
+            if (key == 'flashvars') {
+                paramsgenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192.flashvars = paramgenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192[key];
+            }
+            else {
+                paramsgenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192[key] = paramgenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192[key];
+            }
+        }
+        try {
+            if (moviedatagenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192[randomnumbergenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192][3]) {
+                swfobject.embedSWF(moviePathsgenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192[randomnumbergenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192],
+                        "genericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192", "220",
+                        "165",
+                        "9.0.0",
+                        "/swf/expressInstall.swf", flashvarsgenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192, paramsgenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192, attributesgenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192);
+            }
+        } catch (err) {
+            //alert('Error');
+            //alert(err);
+        }
+
+        // alert('Page should have been changed'+moviePaths[randomnumber]);
+        
+        var timegenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192 = moviedatagenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192[randomnumbergenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192][0];
+        //alert(" time to dispaly this mpvie"+time);
+        var timeusedgenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192 = eval(timegenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192 + '5');
+        if (!isNaN(timeusedgenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192)) {
+            //functionality aborted
+            timedRefreshgenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192(timegenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192);
+
+        }
+
+        
+        return true;
+    }
+}
+
+
+var timeusedtempgenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192 = eval(firsttimetocallgenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192 + '5');
+if (!isNaN(timeusedtempgenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192)) {
+    //functionality aborted
+    timedRefreshgenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192(firsttimetocallgenericcontent_crossrefpar_referenceparagraph_flashmodule_9192_flashmodule_9192);
+}
+
+</script>
+
+    </div>
+</div></div>
+<a name="crossrefpar_componentseparator_d" style="visibility:hidden"></a><div class="parbase section componentseparator"><div class="spacer">&nbsp;</div>
+</div>
+<a name="crossrefpar_referenceparagraph_1" style="visibility:hidden"></a><div class="parbase referenceparagraph section reference"><div style="display:inline;" class="cq-dd-paragraph"><div class="transactionteaser"><div class="transactionteaser_white module dhl">
+    <div class="wrap1">
+        <div class="wrap2">
+            <div class="wrap3">
+                <div class="wrap4">
+                    <div class="wrap5">
+                        <div class="wrap6">
+                            <div class="wrap7">
+                                <div class="wrap8">
+                                    <div class="transaction_teaser_white">
+                                        <div class="transaction_teaser_headline">
+                                            </div>
+                                        <div class="parsys transparsys">
+<a name="containerleftpar_transactionteaser_transparsys_contentteaser" style="visibility:hidden"></a><div class="standardarticle section contentteaser"><!-- start contentteaser -->
+<div class="module dhl content_teaser">
+<div>
+<h2>
+    Votre temps compte</h2>
+
+<div class="richtext">DHL offre une large palette de services en option.<br></div></div>
+<div style="clear:both"></div>
+
+</div>
+</div>
+<a name="containerleftpar_transactionteaser_transparsys_standardlink_1" style="visibility:hidden"></a><div class="standardlink section"><a href="conseils_douanes.html" class="arrowLink" title="" target="_self">
+    Soutien en matière de douane</a></div>
+<a name="containerleftpar_transactionteaser_transparsys_richtexteditor" style="visibility:hidden"></a><div class="ghost section"></div>
+<a name="containerleftpar_transactionteaser_transparsys_expandablelink" style="visibility:hidden"></a><div class="expandablelink section"><div id="containerleftpar_transactionteaser_transparsys_expandablelink">
+        <div dojoType="dijit.IOTitlePane" baseClass="containerleftpar_transactionteaser_transparsys_expandablelink"
+             title="International"
+             open="false" duration="500">
+            <div class="transaction_teaser_txt"><div class="parsys insideparsys">
+<a name="containerleftpar_transactionteaser_transparsys_expandablelink_insideparsys_standardlink_6abe" style="visibility:hidden"></a><div class="standardlink section"><a href="../export/express_international.html" class="arrowLink" title="" target="_self">
+    Export</a></div>
+<a name="containerleftpar_transactionteaser_transparsys_expandablelink_insideparsys_standardlink_229" style="visibility:hidden"></a><div class="standardlink section"><a href="../import/express_import.html" class="arrowLink" title="" target="_self">
+    Import</a></div>
+<a name="containerleftpar_transactionteaser_transparsys_expandablelink_insideparsys_standardlink_42a2" style="visibility:hidden"></a><div class="standardlink section"><a href="conseils_douanes.html" class="arrowLink" title="" target="_self">
+    Conseils douaniers</a></div>
+
+</div>
+<div class="parsys ngwstandardparsys insidestdparsys">
+</div>
+</div></div>
+            </div>
+        </div>
+<a name="containerleftpar_transactionteaser_transparsys_expandablelink_0" style="visibility:hidden"></a><div class="ghost section"></div>
+<a name="containerleftpar_transactionteaser_transparsys_expandablelink_1" style="visibility:hidden"></a><div class="expandablelink section"><div id="containerleftpar_transactionteaser_transparsys_expandablelink_1">
+        <div dojoType="dijit.IOTitlePane" baseClass="containerleftpar_transactionteaser_transparsys_expandablelink_1"
+             title="Services Plus"
+             open="false" duration="500">
+            <div class="transaction_teaser_txt"><div class="parsys insideparsys">
+<a name="containerleftpar_transactionteaser_transparsys_expandablelink_1_insideparsys_standardlink_73d1" style="visibility:hidden"></a><div class="standardlink section"><a href="../services_plus.html#containerpar_expandablelist" class="anchorLink" title="" target="_self">
+    Assurance</a></div>
+<a name="containerleftpar_transactionteaser_transparsys_expandablelink_1_insideparsys_standardlink_2423" style="visibility:hidden"></a><div class="standardlink section"><a href="../services_plus.html#containerpar_expandablelist_0" class="anchorLink" title="" target="_self">
+    Emballage</a></div>
+<a name="containerleftpar_transactionteaser_transparsys_expandablelink_1_insideparsys_standardlink_9a7" style="visibility:hidden"></a><div class="standardlink section"><a href="../services_plus.html#containerpar_expandablelist_1" class="anchorLink" title="" target="_self">
+    Service GoGreen</a></div>
+<a name="containerleftpar_transactionteaser_transparsys_expandablelink_1_insideparsys_standardlink_986" style="visibility:hidden"></a><div class="ghost section"></div>
+<a name="containerleftpar_transactionteaser_transparsys_expandablelink_1_insideparsys_standardlink_ec25" style="visibility:hidden"></a><div class="standardlink section"><a href="../services_plus.html" class="arrowLink" title="" target="_self">
+    Autres Services</a></div>
+
+</div>
+<div class="parsys ngwstandardparsys insidestdparsys">
+</div>
+</div></div>
+            </div>
+        </div>
+
+</div>
+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clearAll"></div>
+</div></div>
+</div></div>
+<a name="crossrefpar_componentseparator" style="visibility:hidden"></a><div class="parbase section componentseparator"><div class="spacer">
+    <hr/>
+</div>
+</div>
+<a name="crossrefpar_referenceparagraph_b" style="visibility:hidden"></a><div class="parbase referenceparagraph section reference"><div style="display:inline;" class="cq-dd-paragraph"><div class="transactionteaser"><div class="transactionteaser_white module dhl">
+    <div class="wrap1">
+        <div class="wrap2">
+            <div class="wrap3">
+                <div class="wrap4">
+                    <div class="wrap5">
+                        <div class="wrap6">
+                            <div class="wrap7">
+                                <div class="wrap8">
+                                    <div class="transaction_teaser_white">
+                                        <div class="transaction_teaser_headline">
+                                            </div>
+                                        <div class="parsys transparsys">
+<a name="containerleftpar_transactionteaser_transparsys_contentteaser_9df2" style="visibility:hidden"></a><div class="standardarticle section contentteaser"><!-- start contentteaser -->
+<div class="module dhl content_teaser">
+<div>
+<h2>
+    <a href="../solutions_pme.html" title="" target="_self">
+        <span class="secret">Solutions PME</span>
+        Solutions PME</a>
+    </h2>
+
+<div class="ct_image">
+        <a href="../solutions_pme.html" title="" target="_self">
+        <span class="secret">Solutions PME</span>
+            <img height="50" width="70" class="cq-dd-image shadow_img" src="../../../content/dam/Local_Images/g0/express/small_business_solutions_1/teasers/sme_teaser_70x50.jpg"/><span style="clear:both; display: block; height: 0; width: 0; content: '';"></span></a>
+    </div>
+    <div class="richtext">En sa qualit&eacute; d&rsquo;expert des exp&eacute;ditions internationales DHL Express comprend les besoins des PME .</div></div>
+<div style="clear:both"></div>
+
+</div>
+</div>
+<a name="containerleftpar_transactionteaser_transparsys_standardlink" style="visibility:hidden"></a><div class="standardlink section"><a href="../solutions_pme.html" class="arrowLink" title="" target="_self">
+    Laissez DHL vous assister dans votre activité</a></div>
+
+</div>
+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clearAll"></div>
+</div></div>
+</div></div>
+<a name="crossrefpar_referenceparagraph_0" style="visibility:hidden"></a><div class="parbase referenceparagraph section reference"><div style="display:inline;" class="cq-dd-paragraph"><div class="iconteaser iconteaser_856d"><div class="iconTeaser iconTeaserGreyContainer module dhl">
+    <div class="wrap1">
+        <div class="wrap2">
+            <div class="wrap3">
+                <div class="wrap4">
+                    <div class="wrap5">
+                        <div class="wrap6">
+                            <div class="wrap7">
+                                <div class="wrap8">
+                                    <div class="iconTeaserGrey">
+    <div class="iconImage iconRight ">
+                                            <a href="ouvrir_compte.html" title="" target="_self">
+                                                <span class="secret">Nouveau chez DHL Express?</span>
+                                                <img src="../../../content/dam/General&#32;DHL&#32;pictures/Icons/Small&#32;teasers_50x50/dhl_open_account_icon_42x40.jpg"/></a>
+                                            </div>
+                                        <h2>
+                                            <a href="ouvrir_compte.html" title="" target="_self">
+                                                <span class="secret">Nouveau chez DHL Express?</span>
+                                                Nouveau chez DHL Express?</a>
+                                            </h2>
+                                        <span class="richtext_alignment">richtextCenter</span>
+                                        <div class="richtext"><a class="arrowLink" href="ouvrir_compte.html">Ouvrir un compte d&egrave;s maintenant</a></div><span class="standard_link_alignment">linkContainerLeft</span>
+                                        <span class="expandable_link_alignment">linkContainerLeft</span>
+                                        <div class="parsys transparsys">
+
+</div>
+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div></div>
+</div></div>
+
+</div>
+</div>
+</div>
+<div id="standardtemplatefooter-container" class="standardtemplatefooter"><div class="faceliftStandardFooter">
+    <div class="footer">
+        <a id="footer"></a>
+
+        <div class="container">
+            <div class="logo">
+
+                <a href="http://www.dp-dhl.com" title="Deutsche Post DHL" target="_blank">
+                    <img title="Deutsche Post DHL" height="34" alt="Deutsche Post DHL Logo" width="139" class="cq-dd-image" src="../../../content/ca/fr/_jcr_content/standardtemplatefooter/image.img.gif/1426007906789.gif"><!-- mig: whitespace -->
+
+                <img src="../../../js/lib/dijit/form/templates/blank.gif" class="blank_gif" alt="External Link / New Window: Deutsche Post DHL" /></a>
+            </div>
+            <div class="advanced_footer_content">
+                <div class="parsys containerfooterlinklist">
+<a name="standardtemplatefooter_containerfooterlinklist_footerlinklists" style="visibility:hidden"></a><div class="footerlinklists section"><div class="link_box"><h6><a href="../../centre_de_contact.html" class="contact_center" target="_self">Centre de contact</a></h6><ul><li><a href="../../centre_de_contact/contacter_express.html" class="arrowLink" target="_self">DHL Express</a></li><li><a href="http://international.dhl.ca/fr/centre_de_contact/contacter_global_forwarding.html" class="arrowLink" target="_self">DHL Global Forwarding</a></li><li><a href="../../centre_de_contact/contacter_globalmail.html" class="arrowLink" target="_self">DHL Global Mail</a></li><li><a href="http://international.dhl.ca/fr/centre_de_contact/contacter_supplychain.html" class="arrowLink" target="_self">DHL Supply Chain</a></li></ul></div>
+</div>
+<a name="standardtemplatefooter_containerfooterlinklist_footerlinklists_0" style="visibility:hidden"></a><div class="footerlinklists section"><div class="link_box"><h6><a href="../../nous_connaitre.html" class="arrowLink" target="_self">Nous conna&icirc;tre</a></h6><ul><li><a href="../../nous_connaitre/portrait_de_lentreprise.html" class="arrowLink" target="_self">Portrait de l&rsquo;entreprise</a></li><li><a href="../../nous_connaitre/solutions_vertes.html" class="arrowLink" target="_self">Solutions vertes</a></li><li><a href="../../nous_connaitre/apercu_des_secteurs.html" class="arrowLink" target="_self">Aper&ccedil;u des secteurs</a></li><li><a href="../../nous_connaitre/responsabilite.html" class="arrowLink" target="_self">Responsabilit&eacute; de l&rsquo;entreprise</a></li><li><a href="../../juridique/sensibilisation_a_la_fraude.html" class="arrowLink" target="_self">Sensibilisation &agrave; la fraude</a></li></ul></div>
+</div>
+
+</div>
+<div class="partnerlogolinks"><div class="partner_box">
+
+    <h6>Official Logistics Partner</h6>
+    <ul>
+        <li><a href="http://www.dhl.com/f1" target="_blank" title="Formula 1"><img src="../../../content/dam/General&#32;DHL&#32;pictures/Logos/IA_Refresh/f1_logo_3_63px.png"/><img src="../../../js/lib/dijit/form/templates/blank.gif" class="blank_gif" alt="External Link / New Window: Formula 1" /></a></li>
+<li><a href="http://www.dhl.com/fashionweek" target="_blank" title="Fashion Week"><img src="../../../content/dam/General&#32;DHL&#32;pictures/Logos/IA_Refresh/fw_logo_63px.png"/><img src="../../../js/lib/dijit/form/templates/blank.gif" class="blank_gif" alt="External Link / New Window: Fashion Week" /></a></li>
+<li><a href="http://www.dhl.com/gewandhaus" target="_blank" title="Gewandhaus Orchestra"><img src="../../../content/dam/General&#32;DHL&#32;pictures/Logos/IA_Refresh/gwo_logo_63px.png"/><img src="../../../js/lib/dijit/form/templates/blank.gif" class="blank_gif" alt="External Link / New Window: Gewandhaus Orchestra" /></a></li>
+<li><a href="http://www.dhl.com/manchesterunited" target="_blank" title="Manchester United"><img src="../../../content/dam/General&#32;DHL&#32;pictures/Logos/IA_Refresh/manu_logo_38px.png"/><img src="../../../js/lib/dijit/form/templates/blank.gif" class="blank_gif" alt="External Link / New Window: Manchester United" /></a></li>
+<li><a href="http://www.dhl.com/fe" target="_blank" title="Formula E"><img src="../../../content/dam/General&#32;DHL&#32;pictures/Logos/IA_Refresh/fia_formulae_championship_84x17.png"/><img src="../../../js/lib/dijit/form/templates/blank.gif" class="blank_gif" alt="External Link / New Window: Formula E" /></a></li>
+<li><a href="http://www.dhl.com/rugbyworldcup" target="_blank" title="Rugby World Cup 2015"><img src="../../../content/dam/General&#32;DHL&#32;pictures/Logos/IA_Refresh/Rugby_45x18.png"/><img src="../../../js/lib/dijit/form/templates/blank.gif" class="blank_gif" alt="External Link / New Window: Rugby World Cup 2015" /></a></li>
+<li><a href="http://www.dhl.com/cirquedusoleil" target="_blank" title="Cirque du Soleil"><img src="../../../content/dam/General&#32;DHL&#32;pictures/Logos/IA_Refresh/criquedusoleil_footer_060314.png"/><img src="../../../js/lib/dijit/form/templates/blank.gif" class="blank_gif" alt="External Link / New Window: Cirque du Soleil" /></a></li>
+</ul>
+</div>
+</div>
+</div>
+            <div class="footer_navigation">
+                <div class="standardtemplatefooterlinks"><ul><li class="firstItem"><a href="../../plan_du_site.html" title="Plan du site" target="_self">Plan du site<img src="../../../js/lib/dijit/form/templates/blank.gif" class="blank_gif" alt="Plan du site" /></a></li><li><a href="../../accessibilite.html" title="Accessibilit&eacute;" target="_self">Accessibilit&eacute;<img src="../../../js/lib/dijit/form/templates/blank.gif" class="blank_gif" alt="Accessibilit&eacute;" /></a></li><li><a href="../../juridique.html#t_c" title="Conditions" target="_self">Conditions<img src="../../../js/lib/dijit/form/templates/blank.gif" class="blank_gif" alt="Conditions" /></a></li><li><a href="../../juridique.html#privacy" title="Donn&eacute;es personnelles &amp; Cookies&nbsp;" target="_self">Donn&eacute;es personnelles &amp; Cookies&nbsp;<img src="../../../js/lib/dijit/form/templates/blank.gif" class="blank_gif" alt="Donn&eacute;es personnelles &amp; Cookies&nbsp;" /></a></li></ul></div>
+<p>
+                        <a href="../../juridique.html" target="_self">
+                            2015 © DHL International GmbH. All rights reserved.</a>
+                        </p>
+                    </div>
+
+            <div class="clearAll">&nbsp;</div>
+        </div>
+
+        </div>
+    </div>
+</div>
+</div>
+    <div  class="navigation_main_shadow">&nbsp;</div>
+
+    </div>
+    <!-- meta tags from source of thank you page -->
+<script type="text/javascript" src="../../../js/changeAnchorforPorrtal.js"></script>
+<script type="text/javascript">
+    var ctryName = 'ca';
+    chnageAnchor(isPortalReq(), ctryName);
+</script>
+
+
+<script type="text/javascript" src="../../../js/cookie.js"></script>
+<script type="text/javascript">
+    expdate = new Date();
+    var expireDay = '1';
+    FixCookieDate(expdate);
+    var cookieVal = '';
+    //expdate.setTime (expdate.getTime() + (31536000));
+    // alert("expireDay---found "+expireDay);
+    expdate.setTime(expdate.getTime() + (expireDay * 24 * 60 * 60 * 1000));
+    var campaignName_old = GetCookie('campaignName');
+    if (campaignName_old != null && campaignName_old != "") {
+        //alert('old campaignName found-->  '+campaignName_old+'!');
+
+    }
+    if (cookieVal != null && cookieVal != "") {
+        //alert('old campaignName not found-->  '+campaignName_old+'!');
+        //new cookies found set new value
+
+        SetCookie("campaignName", cookieVal, expdate, '/');
+
+    }
+</script>
+
+<!-- START OF SmartSource Data Collector TAG v10.2.0 -->
+<!-- Copyright (c) 2012 Webtrends Inc. All rights reserved. -->
+
+<script type="text/javascript">
+    var fpcdomain = 'international.dhl.ca';
+    var countrydcsid1 = 'dcsdcpp3ouz5bdepe48cvzzut_2z6u';
+    var countrydcsid2 = '';
+</script>
+
+<script type="text/javascript">
+    window.webtrendsAsyncInit = function () {
+        var dcs = new Webtrends.dcs().init({
+            dcsid: countrydcsid1, timezone: 1, fpcdom: fpcdomain, offsite: true, download: true, alllinks:false, plugins: {
+            }
+        }).track();
+
+        var dcs2 = new Webtrends.dcs().init({
+            dcsid: countrydcsid2, timezone: 1, fpcdom: fpcdomain, offsite: true, download: true, alllinks:false, plugins: {
+                //hm: {src: "//s.webtrends.com/js/webtrends.hm.js"},
+                facebook:{src:"//s.webtrends.com/js/webtrends.fb.js"},
+                yt:{src:"//s.webtrends.com/js/webtrends.yt.js"}
+            }
+        }).track();
+    };
+    (function () {
+        var s = document.createElement("script");
+        s.async = true;
+        s.src = "/js/webtrends/webtrends.js";
+        var s2 = document.getElementsByTagName("script")[0];
+        s2.parentNode.insertBefore(s, s2);
+    }());
+</script>
+<noscript>
+    <img alt="dcsimg" id="dcsimg" width="1" height="1" src="http://statse.webtrendslive.com/dcsdcpp3ouz5bdepe48cvzzut_2z6u/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;DCSCIP=192.168.95.0&amp;WT.tv=10.2.0&amp;dcssip=wwwinternational.dhl.ca"/>
+    <img alt="dcsimg" id="dcsimgDual" width="1" height="1" src="http://statse.webtrendslive.com//njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;DCSCIP=192.168.95.0&amp;WT.tv=10.2.0&amp;dcssip=wwwinternational.dhl.ca"/>
+</noscript>
+<!-- END OF SmartSource Data Collector TAG --></body></html>

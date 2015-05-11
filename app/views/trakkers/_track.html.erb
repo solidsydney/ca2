@@ -1,0 +1,33 @@
+
+              <div class="wrap8">
+                <form method="get" action="/trakkers/view">
+                  <fieldset>
+                    <legend>Track Now </legend>
+
+                    <noscript>
+                      <p class="error">
+                        <strong>Java Script is required to provide tracking results. Please enable Java Script in your browser.</strong>
+                      </p>
+                    </noscript>
+
+                    <div class="shipment_type">
+                      <label for="brand">Select your shipment type:</label>
+                      <select name="brand" id="brand" class="shipment">
+                        <option title="Express Services" value="DHL">Express Services</option>
+                      </select>
+
+                      <br/>
+
+                    </div>
+
+                    <div class="tracking_no">
+                      <label for="AWB">Tracking Number</label>
+                      <div class="text_area">
+                        <textarea id="AWB" rows="3" cols="40" name="AWB">Enter your tracking number</textarea>
+                      </div>
+                      <input type="submit" value="Track" style="color: #fff; background: #cc0001; padding: 2px; float: right">
+                    </div>
+
+                  </fieldset>
+                </form>
+              </div>

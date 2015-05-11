@@ -1,0 +1,41 @@
+<%= form_for(@trakker) do |f| %>
+  <% if @trakker.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@trakker.errors.count, "error") %> prohibited this trakker from being saved:</h2>
+
+      <ul>
+      <% @trakker.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :number %><br />
+    <%= f.text_field :number %>
+  </div>
+  <div class="field">
+    <%= f.label :date %><br />
+    <%= f.date_select :date %>
+  </div>
+  <div class="field">
+    <%= f.label :location %><br />
+    <%= f.text_field :location %>
+  </div>
+  <div class="field">
+    <%= f.label :destination_service_area %><br />
+    <%= f.text_field :destination_service_area %>
+  </div>
+  <div class="field">
+    <%= f.label :origin_service_area %><br />
+    <%= f.text_field :origin_service_area %>
+  </div>
+  <div class="field">
+    <%= f.label :signed_for_by %><br />
+    <%= f.text_field :signed_for_by %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

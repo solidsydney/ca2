@@ -1,0 +1,21 @@
+/* CSS IE 8 and below */
+
+
+
+.sc_controls  a {
+		width:11px;
+		height:11px;
+		background:url(../img/stage_controls.png) no-repeat 0 -19px;
+		padding:0;
+        zoom:1;
+
+	}
+
+.sc_hotspot_layer {
+	width:246px;
+}
+
+.sc_text_more {
+  background:url(../img/icon_sc_more.gif) no-repeat 0 5px;
+  
+}

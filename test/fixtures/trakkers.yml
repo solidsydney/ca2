@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  number: MyString
+  date: 2015-04-25
+  location: MyString
+  destination_service_area: MyString
+  origin_service_area: MyString
+  signed_for_by: MyString
+
+two:
+  number: MyString
+  date: 2015-04-25
+  location: MyString
+  destination_service_area: MyString
+  origin_service_area: MyString
+  signed_for_by: MyString

@@ -1,0 +1,63 @@
+<style>
+  #waybill-info{
+      background: #666665;
+      margin-bottom: 5px;
+  }
+    .lists {
+        border-bottom: 1px solid #666665;
+        width: 100%;
+
+    }
+    div {
+        margin: 0px;
+        padding: 0px;
+    }
+</style>
+
+<%= provide(:result) do %>
+    <% if not @track.empty? %>
+        <div><b> Result Summary </b></div>
+
+         <div id="waybill-info">
+           <span class="check" style="float: left; width: 5%"><input type="checkbox"> </span>
+            <span class="left-info" style="float: left; width: 45%">
+              <p> <b> Waybill: </b> <%= @track[0].number %> </p>
+              <p style="color: red"> <b> Signed For by: </b> <%= @track[0].signed_for_by %> </p>
+            </span>
+           <span class="right-info" style="float: left; width: 50%">
+             <%= @track[0].created_at.strftime("%A %b %e %Y" ) %> <br />
+             <b> Origin Service Area: <span style="color: red"> > </span>  </b> <strong> <%= @track[0].origin_service_area%></strong> <br />
+             <b> Destination Service Area: <span style="color: red"> > </span></b> <strong> <%= @track[0].destination_service_area %> </strong>
+           </span>
+         </div>
+
+           <div class="underwaybillinfo" style="width: 100%; background: #cccccc">
+             <span style="width: 60%; float: left">
+             <b>
+               <%= @track[0].created_at.strftime("%A %b %e %Y" ) %>
+             </b>
+
+             </span>
+             <span style="width: 40%; float: left"> <b> Location </b> </span>
+           </div>
+
+         <% @lists = @track.reverse %>
+        <% for track in @lists %>
+             <div class="lists" style="float: left; width: 100%">
+               <span class="date" style="width: 10%; float:left;">
+                 <%= track.created_at.strftime("%e") %>
+               </span>
+               <span class="status" style="width: 60%; float: left">
+                 <%= track.status %>
+               </span>
+               <span class="location" style="width: 30%; float:left;">
+                 <%= track.location %>
+               </span>
+             </div>
+             <div style="margin-bottom: 20px; width: 100%"></div>
+
+        <% end %>
+    <% else %>
+        <%=	 render 'notfound' %>
+    <% end %>
+ <% end %>
