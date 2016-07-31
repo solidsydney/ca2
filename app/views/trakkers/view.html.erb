@@ -16,47 +16,289 @@
 
 <%= provide(:result) do %>
     <% if not @track.empty? %>
-        <div><b> Result Summary </b></div>
+         <% @lists = @track %>
 
-         <div id="waybill-info">
-           <span class="check" style="float: left; width: 5%"><input type="checkbox"> </span>
-            <span class="left-info" style="float: left; width: 45%">
-              <p> <b> Waybill: </b> <%= @track[0].number %> </p>
-              <p style="color: red"> <b> Signed For by: </b> <%= @track[0].signed_for_by %> </p>
-            </span>
-           <span class="right-info" style="float: left; width: 50%">
-             <%= @track[0].created_at.strftime("%A %b %e %Y" ) %> <br />
-             <b> Origin Service Area: <span style="color: red"> > </span>  </b> <strong> <%= @track[0].origin_service_area%></strong> <br />
-             <b> Destination Service Area: <span style="color: red"> > </span></b> <strong> <%= @track[0].destination_service_area %> </strong>
-           </span>
-         </div>
+        <div class="shipmenttracking tracking section dhl_classes_comp_tracking_params"><script type="text/javascript" src="/etc/designs/dhl/docroot/tracking/js.js"></script>
+          <div class="tracking-results dhl_classes_comp_tracking_results">
+            <script type="text/ejs" id="tracking-results-express-template">
 
-           <div class="underwaybillinfo" style="width: 100%; background: #cccccc">
-             <span style="width: 60%; float: left">
-             <b>
-               <%= @track[0].created_at.strftime("%A %b %e %Y" ) %>
-             </b>
+            </script><script type="text/javascript" class="config">
+              // <![CDATA[
+              ( new Object({"name":"tracking-results","config":{"iframe":{"targetOrigin":"http://www.dhl.de"},"measurement":{"enabled":false},"text":{"loading":{"progress":"Tracking results are being retrieved... Please stand by."},"messages":{"checkpoints":{"summary":"DHL Express shipments checkpoints"},"details":{"all":{"hide":"Hide All","show":"Show All"},"furtherdetail":"Further Detail","nextstep":"Next Step","single":{"hide":"Hide Details","show":"Show Details"},"summary":"Your DHL Express shipment no."},"duplicates":{"button":"Resolve","hint":"Multiple shipments with same Identifier are present in the system. Please choose your Origin and Destination from below. Please be assured that this will not impact your transit time.","label":"Resolve Duplicate","summary":"DHL Express shipment duplicates"},"error":{"label":"Some of your queries resulted in an error","noResults":"Tracking results could not be loaded from server. Please try again later."},"extraShipmentDetails":{"header":{"details":"Shipment Details...","from":"From","information":"Shipment Information","to":"To"},"help":{"label":"Help","url":""},"summary":"DHL Express extra shipments details"},"label":"Result Summary","print":"Print"},"webtrends":{"enabled":false},"multiple":{"tags":[],"url":"/en/express/tracking"},"single":{"tags":[]}}}}) );
+              // ]]>
+          </script>
 
-             </span>
-             <span style="width: 40%; float: left"> <b> Location </b> </span>
-           </div>
 
-         <% @lists = @track.reverse %>
-        <% for track in @lists %>
-             <div class="lists" style="float: left; width: 100%">
-               <span class="date" style="width: 10%; float:left;">
-                 <%= track.created_at.strftime("%e") %>
-               </span>
-               <span class="status" style="width: 60%; float: left">
-                 <%= track.status %>
-               </span>
-               <span class="location" style="width: 30%; float:left;">
-                 <%= track.location %>
-               </span>
-             </div>
-             <div style="margin-bottom: 20px; width: 100%"></div>
+            <div class="tracking-result-header cl">
+              <h2>Result Summary</h2>
 
-        <% end %>
+
+            </div>
+
+            <div class="tracking-result express">
+              <table class="result-summary result-has-pieces" summary="Your DHL Express shipment no. 7513238401">
+                <colgroup>
+                  <col class="column-delivery-state">
+                  <col class="column-waybill">
+                  <col class="column-destination">
+
+                  <col class="column-pieces">
+
+                </colgroup>
+                <tbody>
+                <tr>
+                  <td class="delivery" title="DELIVERED"></td>
+                  <td class="waybill result-has-no-remarks">
+                    <strong>Waybill: <%= @track[0].number %> </strong>
+
+								<span>
+
+									 Signed for by:
+
+                                  <%= @track[0].signed_for_by %>
+								</span>
+
+
+                  </td>
+                  <td>
+
+                    <span><%= @track[0].created_at.strftime("%A %b %e %Y" ) %></span>
+
+
+                    <span>Origin Service Area:</span>
+
+                    <a class="arrow" target="_blank" href="http://www.cn.dhl.com/en/country_profile.html"><%= @track[0].origin_service_area%></a>
+
+
+
+                    <span>Destination Service Area:</span>
+
+                    <a class="arrow" target="_blank" href="http://www.dhl.com.ng/en/country_profile.html"><%= @track[0].destination_service_area %></a>
+
+
+                  </td>
+
+                  <td>
+
+
+                    <div class="result-pieces">
+                      <p>
+                        1
+                        Piece
+                      </p>
+                      <ul>
+
+                        <li><%= @track[0].piece %></li>
+
+                      </ul>
+                    </div>
+
+                  </td>
+
+                </tr>
+
+                </tbody>
+              </table>
+
+              <table class="result-checkpoints show result-has-pieces" summary="DHL Express shipments checkpoints">
+
+                <colgroup>
+                  <col class="column-counter">
+                  <col class="column-description">
+                  <col class="column-location">
+                  <col class="column-time">
+
+                  <col class="column-piece">
+
+                </colgroup>
+
+                <thead>
+                <% count = @lists.size %>
+          <% for track in @lists %>
+                <tr>
+                  <th colspan="2"> <%= track.created_at.strftime("%A %b %e %Y" ) %> </th>
+                  <th>Location</th>
+                  <th>Time</th>
+
+                  <th>Piece</th>
+
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                  <td><%= count %></td>
+                  <td><%= track.status %></td>
+                  <td><%= track.location %>                             </td>
+                  <td><%= track.created_at.strftime("%I:%M%p") %></td>
+
+                  <td class="result-pieces">
+
+                    <p class="">
+                      1
+                      Piece
+                    </p>
+                    <ul style="display: none;">
+
+                      <li><%= track.piece %></li>
+
+                    </ul>
+
+                  </td>
+
+                </tr>
+
+                <% count -= 1 %>
+                <% end %>
+
+                </tbody>
+        </table>
+
+
+              <p class="result-details-toggle">
+
+                <a class="arrow" href="#">Hide Details</a>
+
+              </p>
+            </div>
+
+
+
+
+            <button class="results-print tracking-button">
+              <span>Print</span>
+            </button>
+
+          </div><script type="text/javascript" src="/etc/designs/dhl/docroot/tracking/js/tracking-utils-shipment.js"></script>
+
+          <script type="text/javascript">
+              // <![CDATA[
+              // variables
+              var areNotValidAWBorPiece = "are not valid waybill or piece identifier numbers.";
+              var combinationNotAllowed = "Combination not allowed";
+              var correctAWB = "Please correct or remove these numbers.";
+              var correctRemove = "Please correct or remove invalid inputs.";
+              var duplicatevalue = "Duplicate shipment numbers";
+              var entries = "Inputs";
+              var entry = "Input";
+              var errorDuplicateNumber = "You have entered the same tracking number multiple times which cannot be processed.";
+              var errorEmpty = "You have not entered any value in the box.";
+              var errorMixed = "Please enter either waybill numbers or piece identifiers";
+              var errorZero = "Please enter a valid shipment number.";
+              var finalPieceStr  = "";
+              var invalidEntry = "Invalid Input";
+              var invalidValues ="Invalid shipment number";
+              var isAwb = "is a waybill number.";
+              var isNotValidAWBorPiece = "is not a valid waybill or piece identifier number.";
+              var isPieceId = "is a piece identifier.";
+              var lessthanTenNumber = "Enter 10 or less";
+              var notAwb1 = "is not a valid waybill number";
+              var notPieceId1 = "or a valid piece identifier.";
+              var noValues = "Please enter a tracking number.";
+              var onlyOne = "only one";
+              var pleaseEnter = "Please enter";
+              var reasonForReject = "";
+              var reasonForSuccess = "";
+              var selectShipType = "Please select an appropriate shipment type.";
+              var shipType = "No shipment type selected";
+              var shipmentnumbersfield ="Enter your tracking number(s)";
+              var toomanyInput = "Too many tracking numbers entered ";
+              var toomanyNumber = "Too many numbers";
+              // tracking engines
+              var trackingEngines = [];
+
+              trackingEngines.push( {
+                  brand: 'DHL',
+                  url: ''
+              } );
+
+
+              function enableWebtrendsTracking() {
+
+              }
+              // ]]>
+          </script>
+
+          <div class="dhl tracking-form tracking-shipment cl dhl_classes_comp_tracking_form"><p class="tracking-form-new-search"><a class="arrow" href="#">Try a new search</a></p>
+            <div class="wrap1 hd">
+              <div class="wrap2">
+                <div class="wrap3">
+                  <div class="wrap4">
+                    <div class="wrap5">
+                      <div class="wrap6">
+                        <div class="wrap7">
+                          <div class="wrap8">
+                            <form name="trackingIndex" id="trackingIndex" method="get" action="/en/express/tracking.html">
+                              <fieldset>
+                                <legend>Track Now</legend>
+
+                                <noscript>
+                                  &amp;lt;p class="error"&amp;gt;
+                                  &amp;lt;strong&amp;gt;Java Script is required to provide tracking results. Please enable Java Script in your browser.&amp;lt;/strong&amp;gt;
+                                  &amp;lt;/p&amp;gt;
+                                </noscript>
+
+                                <div class="shipment_type">
+                                  <label for="brand">Select your shipment type:</label>
+                                  <select name="brand" id="brand" class="shipment">
+                                    <option title="Express Services" value="DHL">Express Services</option>
+                                  </select>
+
+                                  <br>
+
+                                </div>
+
+                                <div class="tracking_no">
+                                  <label for="AWB">Tracking Number</label>
+                                  <div class="text_area">
+                                    <textarea id="AWB" rows="3" cols="40" name="AWB">Enter your tracking number(s)</textarea>
+                                    <p>Track up to 10 numbers at a time. Separate by a comma (,) or return (enter).</p>
+                                  </div>
+
+                                </div>
+
+                                <button class="tracking-button">
+                                  <span>Track</span>
+                                </button>
+                              </fieldset>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="clearAll"> </div>
+
+            <script type="text/javascript" class="config">
+                // <![CDATA[
+                ( new Object( {
+                    "name": "tracking-form",
+                    "config": {
+                        awbDefaultValue: 'Enter\x20your\x20tracking\x20number\x28s\x29',
+                        text: {
+                            newSearch: 'Try\x20a\x20new\x20search'
+                        }
+
+                    }
+                } ) );
+                // ]]>
+            </script>
+          </div>
+          <script type="text/javascript" class="config">
+              // <![CDATA[
+              ( new Object({"name":"tracking","config":{"logEnabled":false,"params":{"countryCode":{"value":"g0"},"languageCode":{"value":"en"}}}}) );
+              // ]]>
+          </script></div>
+
+
+
+
+
+
+
     <% else %>
         <%=	 render 'notfound' %>
     <% end %>
